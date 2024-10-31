@@ -19,7 +19,8 @@
   --border-color:#DCDCDC;
   --mainHeading-fontSize:30px;
   --mainText-fontSize:20px;
-  --moreLink-fontSize:14px;
+  --moreLink-fontSize:13px;
+  --navbar-fontSize:14px;
 }
 
 // background: #B3B3B3;
@@ -108,13 +109,13 @@ padding: 20px 0px;
       &.title{
         width: 186px;
         height: 100%;
-        border-radius: 4px;
+        // border-radius: 4px;
         font-size: var(--mainHeading-fontSize);
         font-weight: 700;
         line-height: 1.5;
         align-items: center;
         padding: 15px 9px;
-        border: 1px solid var(--navs-color);
+        // border: 1px solid var(--navs-color);
       }
   }
 }
@@ -152,7 +153,7 @@ padding: 20px 0px;
       background-size: auto;
     }
     h3{
-      font-size: 30px;
+      font-size: var(--mainHeading-fontSize);
       color: var(--dark-color);
       font-weight: 700;
     }
@@ -171,33 +172,34 @@ padding: 20px 0px;
     &::before{
       position: absolute;
       content: "";
-      top: -45px;
-      right: -75px;
+      top: -25px;
+      right: -32px;
       left: unset;
       height: 38px;
-      width: 31px;
-      background-image:url(../img/icon-right-heading.png);
+      width: 38px;
+      background-image:url(../img/icon-right.png);
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: auto;
+      background-size: contain;
     }
     &::after{
       position: absolute;
       content: "";
-      top: -25px;
-      left: -75px;
+      top: -2px;
+    left: -36px;
       right: unset;
       height: 38px;
-      width: 31px;
-      background-image:url(../img/icon-left-heading.png) ;
+      width: 38px;
+      background-image:url(../img/icon-left.png) ;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: auto;
+      background-size: contain;
     }
     h3{
-      font-size: 30px;
+      font-size: var(--mainText-fontSize);
       color: var(--dark-color);
-      font-weight: 700;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
   }
 
