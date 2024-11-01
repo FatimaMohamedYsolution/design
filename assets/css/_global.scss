@@ -122,6 +122,45 @@ padding: 20px 0px;
 
 
 
+.section-title-heading{
+  .sec-after-before-heading{
+    position: relative;
+    display: inline-block;
+    &::before{
+      top: 2px;
+      right: -37px;
+      left: unset;
+      position: absolute;
+      content: "";
+      height: 38px;
+      width: 38px;
+      background-image:url(../img/icon-right.png);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: contain;
+    }
+    &::after{
+      top: -25px;
+    left: -36px;
+      right: unset;
+      position: absolute;
+      content: "";
+      height: 38px;
+      width: 38px;
+      background-image:url(../img/icon-left.png) ;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: contain;
+
+    }
+
+  }
+
+}
+
+
+
+
 .section-title{
   .sec-after-before{
     position: relative;
@@ -129,28 +168,28 @@ padding: 20px 0px;
     &::before{
       position: absolute;
       content: "";
-      top: -30px;
-      right: -35px;
-      left: unset;
+      top: 7px;
+    right: -50px;
+        left: unset;
       height: 53px;
       width: 43px;
       background-image:url(../img/icon-right.png) ;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: auto;
+      background-size: contain;
     }
     &::after{
       position: absolute;
       content: "";
-      top: -6px;
-    left: -42px;
-      right: unset;
+      top: -36px;
+      left: -42px;
+        right: unset;
       height: 53px;
       width: 43px;
       background-image:url(../img/icon-left.png) ;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: auto;
+      background-size: contain;
     }
     h3{
       font-size: var(--mainHeading-fontSize);
@@ -165,45 +204,7 @@ padding: 20px 0px;
 // //   # Icon Heading
 // //   --------------------------------------------------------------*/
 
-.section-title-heading{
-  .sec-after-before-heading{
-    position: relative;
-    display: inline-block;
-    &::before{
-      position: absolute;
-      content: "";
-      top: -25px;
-      right: -32px;
-      left: unset;
-      height: 38px;
-      width: 38px;
-      background-image:url(../img/icon-right.png);
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: contain;
-    }
-    &::after{
-      position: absolute;
-      content: "";
-      top: -2px;
-    left: -36px;
-      right: unset;
-      height: 38px;
-      width: 38px;
-      background-image:url(../img/icon-left.png) ;
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: contain;
-    }
-    h3{
-      font-size: var(--mainText-fontSize);
-      color: var(--dark-color);
-      font-weight: 500;
-      letter-spacing: 1px;
-    }
-  }
 
-}
 
 
 
@@ -220,7 +221,32 @@ padding: 20px 0px;
                   // background-image: linear-gradient(to left, #8142FF 0%, #4CC4FF 100%) !important;
               background-color: var(--navs-color);
               color: #fff;
-    font-size: 15px;
+              font-size: 15px;
+              svg{
+                font-size: 20px;
+                path{
+                  fill: var(--white-color);
+                }
+                &.last-news{
+                  path{
+                    fill: transparent;
+                    stroke: #fff;
+              
+                  }
+                }
+              }
+              }
+              svg{
+                font-size: 20px;
+                path{
+                  fill: var(--navbar-color);
+                }
+                &.last-news{
+                  path{
+                    fill: transparent;
+                
+                  }
+                }
               }
           }
           

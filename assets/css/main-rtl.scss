@@ -4,3 +4,274 @@ body {
 }
 
 
+// //   /*--------------------------------------------------------------
+// //   # Start Header
+// //   --------------------------------------------------------------*/
+.heading{
+  .top-heading{
+  .top-links{
+      .dropdown{
+          ul{
+              &.custom-drob{
+                  li{
+                      
+                      &.li-custom{
+                        
+                          &:hover{
+                              .sub-menu{
+                                  display: block;
+                                  position: absolute;
+                                  display: block;
+                                  width: fit-content;
+                                  background: var(--primary-color);
+                                  top: 100%;
+                                  border-radius: 4px;
+                                  padding: 20px;
+                                  left: 0px;
+                                  right: unset;
+                                  transition: var(--transition);
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    }
+  }
+
+}
+// //   /*--------------------------------------------------------------
+// //   # End Header
+// //   --------------------------------------------------------------*/
+
+
+// //   /*--------------------------------------------------------------
+// //   # Start Hero
+// //   --------------------------------------------------------------*/
+.hero{
+  // height: 100vh;
+  .hero-bg{
+      clip-path: circle(105% at 100% 50%);
+      &:after{
+        clip-path: circle(105% at 100% 50%);
+      }
+      .custom-container {
+        .box-content{
+         a{
+          svg{
+              &.fa-arrow-right{
+                  transform: rotate(-180deg);
+              }
+          }
+      }
+        }
+    }
+    }
+    .wrapper-cards{
+      .card-box{
+          &.first-card{
+              left: 130px;
+              right: unset;
+              top: 25px;
+            
+          }
+          &.sec-card{
+              top: -37px;
+              left: -25px;
+              right: unset;
+          }
+          &.third-card{
+              top: -20px;
+              left: 45px;
+              right: unset;
+          
+          }
+        
+      }
+    }
+}
+// //   /*--------------------------------------------------------------
+// //   # End Hero
+// //   --------------------------------------------------------------*/
+
+
+// //   /*--------------------------------------------------------------
+// //   # Start Services Section
+// //   --------------------------------------------------------------*/
+.services{
+  .sec-bg{
+  .serv-content{
+    a{
+      svg{
+          &.fa-arrow-right{
+              transform: rotate(-180deg);
+          }
+      }
+  }
+  }
+  }
+}
+// //   /*--------------------------------------------------------------
+// //   # End Services Section
+// //   --------------------------------------------------------------*/
+
+
+// //   /*--------------------------------------------------------------
+// //   # Start Statistics
+// //   --------------------------------------------------------------*/
+
+.statistics{
+.statistics-cards{
+  position: relative;
+  .card-box-bottom{
+      position: absolute;
+      top: 105px;
+      left: -65px;
+      text-align: center; 
+      width: 250px;
+      height: 270px;
+      overflow: hidden;
+      border-radius: 30px;
+     
+  }
+}
+ 
+
+}
+// //   /*--------------------------------------------------------------
+// //   # End Statistics
+// //   --------------------------------------------------------------*/
+
+
+// //   /*--------------------------------------------------------------
+// //   # Start Our News Section
+// //   --------------------------------------------------------------*/
+.news{
+  background-image: url(../img/Rectangle109.png);
+  width: 101%;
+  .news-bg{
+  padding-bottom: 70px;
+  background-image: url(../img/news-bg.png);
+  background-position: bottom;
+  background-size: cover;
+  a{
+    svg{
+        &.fa-arrow-right{
+            transform: rotate(-180deg);
+        }
+    }
+}
+  }
+}
+// //   /*--------------------------------------------------------------
+// //   # End Our News Section
+// //   --------------------------------------------------------------*/
+
+// //   /*--------------------------------------------------------------
+// //   # Start Footer Section
+// //   --------------------------------------------------------------*/
+
+.footer{
+  .bg-footer{
+    .footer-right-side{
+      border-bottom: 1px dashed #333;
+      border-right: 1px dashed #333;
+      border-left: 0px dashed #333;
+      border-bottom-left-radius: 0px;
+      // border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+}
+
+.input-group{
+  margin: 10px 0px;
+  input{
+    &.form-control{
+      height: 45px;
+      border-radius: 30px;
+      border-top-left-radius: 30px !important;
+      border-bottom-left-radius: 30px !important;            
+      border-top-right-radius: 30px !important;
+      border-bottom-right-radius: 30px !important;
+      border: transparent;
+    }
+  }
+  button{
+    &.subscribe-now{
+      background-color: var(--primary-color);
+        border: none;
+          color: #fff;
+          padding: 0;
+          height: 45px;
+          text-align: center;
+          border-top-left-radius: 30px !important;
+          border-bottom-left-radius: 30px !important;
+          padding-inline: 25px;
+          border-radius: 30px;
+          // margin-inline-start: -50px;
+          position: absolute;
+          z-index: 9999;
+          right: unset;
+          left: 0;
+      }
+  }
+
+}
+
+// //   /*--------------------------------------------------------------
+// //   # End Footer Section
+// //   --------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+.section-title-heading{
+  .sec-after-before-heading{
+    &::before{
+      top: -25px;
+      right: -32px;
+      left: unset;
+    }
+    &::after{
+      top: -2px;
+    left: -36px;
+      right: unset;
+    }
+  }
+
+}
+
+
+
+.section-title{
+  .sec-after-before{
+    &::before{
+      top: -30px;
+      right: -35px;
+      left: unset;
+    }
+    &::after{
+      top: -6px;
+    left: -42px;
+      right: unset;
+
+    }
+    
+  }
+
+}
+
+
+
+
+
+

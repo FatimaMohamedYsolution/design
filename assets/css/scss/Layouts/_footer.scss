@@ -13,17 +13,12 @@
     background-position: bottom;
     background-size: cover;
     .footer-right-side{
+      border-left: 1px dashed #333;
       border-bottom: 1px dashed #333;
-      border-right: 1px dashed #333;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 0px;
       padding: 20px;
       height: 260px;
-      // display: flex;
-      // background-image: url(../img/footer-vector.png);
-      // background-position: bottom;
-      // background-size: cover;
-      // background-repeat: no-repeat;
       .first-box{
         width: 400px;
         // background-color: red;
@@ -188,9 +183,9 @@
             border-radius: 30px;
             // margin-inline-start: -50px;
             position: absolute;
-    z-index: 9999;
-    right: unset;
-    left: 0;
+            z-index: 9999;
+            right: 0;
+            left: unset;
         }
     }
 
