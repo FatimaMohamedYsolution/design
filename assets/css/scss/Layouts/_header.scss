@@ -2,6 +2,7 @@
 
 .heading{
     width: 100%;
+    height: 100px;
     .top-heading{
         background-color: var(--primary-color);
         padding: 15px 0px;
@@ -27,6 +28,7 @@
                 box-shadow: none;
                 font-size: 13px;
                 font-weight: 400;
+                margin-top: 1px;
             }
             ul{
                 &.custom-drob{
@@ -115,6 +117,7 @@
             font-size: 13px;
             font-weight: 400;
             color: var(--white-color);
+            margin-top: 1px;
            }
         }
         .search-icon{
@@ -128,7 +131,7 @@
             align-items: center;
             justify-content: center;
             color: var(--white-color);
-            font-size: 20px;
+            font-size: 17px;
             // margin-inline-end: 5px;
                 // .fa-search{
                     .fa-search{
@@ -167,9 +170,13 @@
                align-items: center;
             //    margin: 0px 5px;
                a{
-                padding: 5px 8px;
+                // padding: 5px 8px;
+                // color: var(--white-color);
+                // font-size: var(--moreLink-fontSize);
+                padding: 6px 8px 5px;
                 color: var(--white-color);
                 font-size: var(--moreLink-fontSize);
+                margin-top: 2px;
                }
             }
 }

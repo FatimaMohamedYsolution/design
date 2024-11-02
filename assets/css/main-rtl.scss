@@ -82,8 +82,8 @@ body {
               right: unset;
           }
           &.third-card{
-              top: -20px;
-              left: 45px;
+              top: -135px;
+              left: 25px;
               right: unset;
           
           }
@@ -227,13 +227,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 .section-title-heading{
   .sec-after-before-heading{
     &::before{
@@ -251,7 +244,6 @@ body {
 }
 
 
-
 .section-title{
   .sec-after-before{
     &::before{
@@ -260,15 +252,34 @@ body {
       left: unset;
     }
     &::after{
-      top: -6px;
+      // top: -6px;
+    top: 45px;
     left: -42px;
       right: unset;
 
     }
-    
+  }
+}
+
+
+.section-title-banner{
+  .sec-after-before-banner{
+    &::before{
+      top: -30px;
+      right: -30px;
+        left: unset;
+    }
+    &::after{
+      top: 5px;
+      left: -37px;
+        right: unset;
+
+    }
   }
 
 }
+
+
 
 
 

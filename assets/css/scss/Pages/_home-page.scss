@@ -5,14 +5,21 @@
 // //   # Start Hero Section
 // //   --------------------------------------------------------------*/
 .hero{
-    // height: 100vh;
+          height: -moz-calc(100vh - 100px);
+          height: -webkit-calc(100vh - 100px);
+          height: calc(100vh - 100px);
+        //   margin-top: 100px;
     .hero-bg{
         position: relative;
         text-align: center;
         width: 100%;
-        height: 100vh;
+        // height: 100vh;
+          height: -moz-calc(100vh - 100px);
+          height: -webkit-calc(100vh - 100px);
+          height: calc(100vh - 100px);
+          margin-top: 100px;
+
         overflow: hidden;
-        // clip-path: circle(105% at 100% 50%);
         clip-path: circle(105% at 0 50%);
 
         &:after{
@@ -21,6 +28,7 @@
         //   height: -moz-calc(100vh - 100px);
         //   height: -webkit-calc(100vh - 100px);
         //   height: calc(100vh - 100px);
+        //   margin-top: 100px;
         height: 100vh;
           position: absolute;
           left: 0;
@@ -34,24 +42,32 @@
         .video-bg{
           img{
             width: 100%;
-            height: 100vh;
-            // height: -moz-calc(100vh - 100px);
-            // height: -webkit-calc(100vh - 100px);
-            // height: calc(100vh - 100px);
+            // height: 100vh;
+            height: -moz-calc(100vh - 100px);
+            height: -webkit-calc(100vh - 100px);
+            height: calc(100vh - 100px);
             position: absolute;
-            margin-top: 100px;
+            // margin-top: 100px;
             // object-fit: fill;
-          left: 0;
-          right: 0;
+            left: 0;
+            right: 0;
         }
         }
         .custom-container {
-          position: relative;
-          z-index: 2;
+            display: flex;
+            position: relative;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            justify-content: start;
+            align-items: center;
           .box-content{
-            margin-top:280px;
-            text-align: start;
             padding-inline-start: 90px;
+            .custon-banner-title{
+                margin-inline-start: -90px;
+            }
            h2{
             color: var(--white-color);
             margin-bottom: 30px;
@@ -61,8 +77,10 @@
            p{
             color: var(--white-color);
             margin-bottom: 30px;
+            margin-top: 10px;
             font-size: 25px;
             font-weight: 400;
+            font-family: PingARLT-Regular;
            }
     
           }
@@ -70,7 +88,16 @@
       }
 
       .wrapper-cards{
-        margin-top: 205px;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: relative;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
         .card-box{
             position: relative;
             width: 180px;
@@ -98,9 +125,12 @@
             }
             &.third-card{
                 position: relative;
-                top: -20px;
+                // top: -20px;
+                // left: unset;
+                // right: 45px;
+                top: -135px;
                 left: unset;
-                right: 45px;
+                right: 25px;
                 &:after{
                     background: var(--secondary-color);
                   }
@@ -128,12 +158,17 @@
                 }
             }
             .content{
-                text-align: start;
+                text-align: center;
                 position: relative;
                 z-index: 2;
-                padding: 20px;
+                padding: 0px 5px;
                 color: #fff;
-                bottom: -25%;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                     img{
                         width: 25px;
                         height: 25px;
@@ -149,6 +184,7 @@
                     font-size: var(--moreLink-fontSize);
                     color: var(--white-color);
                     font-weight: 400;
+                    font-family: PingARLT-Light;
                 }
             }
         }
@@ -162,23 +198,24 @@
 // //   # Start  Services
 // //   --------------------------------------------------------------*/
 .services{
+    margin-top: 100px;
     background-image: url(../img/Rectangle109.png);
     width: 101%;
     .sec-bg{
         padding-bottom: 50px;
-background-image: url(../img/Vector14.png);
-    background-position: bottom;
-    background-size: cover;
-
+        background-image: url(../img/Vector14.png);
+        background-position: bottom;
+        background-size: cover;
     .card-box{
         position: relative;
         text-align: center;
         // width: 100%;
         // height: 240px;
-        width: 300px;
-        height: 370px;
+        width: 280px;
+        height: 300px;
         overflow: hidden;
         border-radius: 30px;
+        box-shadow:0px 8px 24px rgba(0, 0, 0, 0.25);
         &:after{
             content: "";
             width: 300px;
@@ -188,6 +225,7 @@ background-image: url(../img/Vector14.png);
             top: 0;
             background: var(--white-color);
             opacity: 0.95;
+            background-color: rgba(255, 255, 255, 0.95);
           }
         .img-card{
             img{
@@ -200,17 +238,32 @@ background-image: url(../img/Vector14.png);
             }
         }
         .content{
+            // text-align: center;
+            // margin-top: 100px;
+            // position: relative;
+            // z-index: 2;
+            // top: 105px;
+            // padding: 20px;
+            // color: #000;
             text-align: center;
-            margin-top: 100px;
             position: relative;
             z-index: 2;
-            top: 105px;
-            padding: 20px;
-            color: #000;
+            padding: 0px 5px;
+            color: #fff;
+            // top: 50%;
+            // transform: translateY(-50%);
+            // bottom: 0%;
+            // transform: translateY(165px);
+            top: 50%;
+            transform: translateY(60%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             .img-box{
                 background-color: var(--primary-color);
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             /* padding: 16px; */
             text-align: center;
@@ -223,15 +276,19 @@ background-image: url(../img/Vector14.png);
                 }
             }
             h3{
-                font-size: var(--mainText-fontSize);
-                color: var(--primary-color);
+                font-size: var(--serv-card-heading);
+                color: var(--dark-color);
                 margin-inline-start: 5px;
+                font-weight: 700;
             }
             p{
                 font-size: 16px;
                 font-weight: 400;
+                font-family: PingARLT-Regular;
                 color: var(--dark-color);
-                margin-top: 15px;
+                margin-top: 8px;
+                text-align: start;
+                line-height: 1.67;
             }
         }
     }
@@ -321,7 +378,7 @@ background-image: url(../img/Vector14.png);
                 height:  340px;
                 // height: 100vh;
                 position: absolute;
-                object-fit: fill;
+                object-fit: cover;
               left: 0;
               right: 0;
             }
@@ -338,9 +395,13 @@ background-image: url(../img/Vector14.png);
     width: 760px;
     height: 600px;
     margin:40px auto;
-    margin-inline-start: 125px;
+    // margin-inline-start: 125px;
+    margin-inline-start: 80px;
     position: relative;
         .statistics-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .container-icon{
                 background-color: var(--third-color);
                 width: 65px;
@@ -356,6 +417,22 @@ background-image: url(../img/Vector14.png);
                  height: 30px;
                 }
             }
+            h3{
+                margin-top: 15px;
+                font-size: 20px;
+                color: #000;
+                font-weight: 700;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 17px;
+                color: #000;
+                font-weight: 400;
+                font-family: PingARLT-Regular;
+                padding: 0;
+                margin: 0;
+            }
     }
         .statistics-card-one{
             position: absolute;
@@ -365,20 +442,26 @@ background-image: url(../img/Vector14.png);
         .statistics-card-two{
             position: absolute;
             left: unset;
-            right: 108px;
-            top: 142px;
+            right: 86px;
+            top: 132px;
+            .container-icon{
+                background-color: var(--icons-bg-color);
+            }
     }
         .statistics-card-three{
             position: absolute;
             left: unset;
-            right: 345px;
+            right: 310px;
             top: 81px;
     }
         .statistics-card-four{
             position: absolute;
-            left: 138px;
-    right: unset;
-    top: -37px;
+            left: 125px;
+            right: unset;
+            top: -37px;
+            .container-icon{
+                background-color: var(--icons-bg-color);
+            }
     }
         .statistics-card-five{
             position: absolute;
@@ -391,6 +474,9 @@ background-image: url(../img/Vector14.png);
                 left: 128px;
                 right: unset;
                 top: 228px;
+                .container-icon{
+                    background-color: var(--icons-bg-color);
+                }
         }
 
 }

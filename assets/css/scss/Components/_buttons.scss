@@ -3,9 +3,10 @@
 a{
     &.primary-btn{
         background-color: var(--secondary-color);
-        font-size: var(--mainText-fontSize);
+        font-size: var(--btns-fontSize);
         color: var(--white-color);
         font-weight: 700;
+        font-family: PingARR;
         padding: 10px 15px;
         margin-top: 15px;
         display: flex;
@@ -27,7 +28,7 @@ a{
 a{
     &.secondary-btn{
         background-color: var(--primary-color);
-        font-size: var(--mainText-fontSize);
+        font-size: var(--btns-fontSize);
         color: var(--white-color);
         font-weight: 700;
         padding: 10px 15px;

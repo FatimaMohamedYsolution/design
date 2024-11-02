@@ -39,8 +39,8 @@ body {
   right: unset;
 }
 .hero .wrapper-cards .card-box.third-card {
-  top: -20px;
-  left: 45px;
+  top: -135px;
+  left: 25px;
   right: unset;
 }
 
@@ -130,7 +130,18 @@ body {
   left: unset;
 }
 .section-title .sec-after-before::after {
-  top: -6px;
+  top: 45px;
   left: -42px;
+  right: unset;
+}
+
+.section-title-banner .sec-after-before-banner::before {
+  top: -30px;
+  right: -30px;
+  left: unset;
+}
+.section-title-banner .sec-after-before-banner::after {
+  top: 5px;
+  left: -37px;
   right: unset;
 }/*# sourceMappingURL=main-rtl.css.map */
