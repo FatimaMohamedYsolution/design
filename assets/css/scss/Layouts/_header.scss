@@ -3,6 +3,7 @@
 .heading{
     width: 100%;
     height: 100px;
+    transition: var(--transition);
     .top-heading{
         background-color: var(--primary-color);
         padding: 15px 0px;
@@ -214,6 +215,17 @@
 
 }
 
+.heading.scrolled{
+    .navbar{
+        border-radius: 0px;
+        top: 0px;
+         width: 100%;
+    }
+
+}
 
 
 
+// #naaaaaav{
+//     width: 100%;
+// }

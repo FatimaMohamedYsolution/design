@@ -144,4 +144,33 @@ body {
   top: 5px;
   left: -37px;
   right: unset;
+}
+
+@media (max-width: 767px) {
+  .hero .hero-bg {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  .hero .hero-bg::after {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  .hero .hero-bg .video-bg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero .hero-bg .custom-container .box-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate(0, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0;
+  }
+  .hero .hero-bg .custom-container .box-content .custon-banner-title {
+    margin-inline-start: 0px;
+  }
 }/*# sourceMappingURL=main-rtl.css.map */
