@@ -212,7 +212,7 @@ body {
           border-radius: 30px;
           // margin-inline-start: -50px;
           position: absolute;
-          z-index: 9999;
+          z-index: 999;
           right: unset;
           left: 0;
       }
@@ -281,9 +281,6 @@ body {
 
 
 
-
-
-
 @media(max-width:767px){
   .hero{
     .hero-bg{
@@ -314,6 +311,75 @@ body {
     }
 
         }
+        .wrapper-cards {
+          position: initial;
+          transform: none;
+          display: block;
+    width: 100%;
+          .card-box{
+              position: relative;
+              &.first-card{
+                  position: relative;
+                  left: unset;
+                  right: unset;
+                  top: unset;
+                  width: 100%;
+                  margin: auto;
+                  &:after{
+                    width: 100%;
+                    }
+              }
+              &.sec-card{
+                left: unset;
+                right: unset;
+                top: unset;
+                width: 100%;
+                margin: 15px auto;
+                &:after{
+                  width: 100%;
+                  }
+              }
+              &.third-card{
+                left: unset;
+                right: unset;
+                top: unset;
+                width: 100%;
+                margin: auto;
+                &:after{
+                width: 100%;
+                }
+              }
+              .img-card{
+                img{
+                    width: 100%;
+                }
+              }
+             
+          }
+
+      }
+
 }
+.statistics{
+  .statistics-cards{
+    .card-box-bottom {
+      left: -35px;
+    }
+  }
+  .statistics-content {
+    margin-inline-start: 0px;
+    margin-top: 70px;
+}
+}
+
+.footer .bg-footer .footer-left-side .box-social .bottom-sec {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  a{
+    margin-inline: 10px;
+  }
+}
+
 }
 

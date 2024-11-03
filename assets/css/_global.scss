@@ -33,69 +33,63 @@
   --------------------------------------------------------------*/
 
 
-  @font-face {
-    font-family: PingARLT-Medium;
-    src: url(../Main-font/Font/PingAR+LT-Medium.otf);
-  }
+  // @font-face {
+  //   font-family: PingARLT-Medium;
+  //   src: url(../Main-font/Font/PingAR+LT-Medium.otf);
+  // }
 
-  @font-face {
-    font-family: PingARLT-Light;
-    src: url(../Main-font/Font/PingAR+LT-Light.otf);
-  }
+  // @font-face {
+  //   font-family: PingARLT-Light;
+  //   src: url(../Main-font/Font/PingAR+LT-Light.otf);
+  // }
 
-  @font-face {
-    font-family: PingARR;
-    src: url(../Main-font/Font/PingAR+LT-Bold.otf);
-  }
-  @font-face {
-    font-family: PingARLT-Regular;
-    src: url(../Main-font/Font/PingAR+LT-Regular.otf);
-  }
-
-
-// @font-face {
-//   font-family: PingAR;
-//   src: url(../Main-font/Font/PingAR+LT-Light.otf);
-//   font-weight: 300; /* Light */
-
-// }
-
-// @font-face {
-//   font-family: PingAR;
-//   src: url(../Main-font/Font/PingAR+LT-Regular.otf);
-//   font-weight: 400; /* Regular */
-
-// }
-
-// @font-face {
-//   font-family: PingAR;
-//   src: url(../Main-font/Font/PingAR+LT-Medium.otf);
-//   font-weight: 500; /* Normal */
+  // @font-face {
+  //   font-family: PingARR;
+  //   src: url(../Main-font/Font/PingAR+LT-Bold.otf);
+  // }
+  // @font-face {
+  //   font-family: PingARLT-Regular;
+  //   src: url(../Main-font/Font/PingAR+LT-Regular.otf);
+  // }
 
 
-// }
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Light.otf);
+  font-weight: 300; /* Light */
 
-// @font-face {
-//   font-family: PingAR;
-//   src: url(../Main-font/Font/PingAR+LT-Bold.otf);
-//   font-weight: 600; /* Bold */
+}
 
-// }
-// @font-face {
-//   font-family: PingAR;
-//   src: url(../Main-font/Font/PingAR+LT-Heavy.otf);
-//   font-weight: 700; /* Heavy */
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Regular.otf);
+  font-weight: 400; /* Regular */
 
-// }
+}
 
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Medium.otf);
+  font-weight: 500; /* Normal */
 
+}
 
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Bold.otf);
+  font-weight: 600; /* Bold */
 
+}
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Heavy.otf);
+  font-weight: 700; /* Heavy */
 
-  
+}
+
   body {
     overflow-x: hidden;
-    font-family: PingARR;
+    font-family: PingAR;
   }
   
   html {
@@ -150,7 +144,6 @@ p{
   &.desc{
 font-size: 18px;
 font-weight: 400;
-font-family: PingARLT-Regular;
 color: var(--dark-color);
 padding: 20px 0px;
   }
@@ -301,7 +294,6 @@ padding: 20px 0px;
       font-weight: 700;
     }
   }
-
 }
 
 // //   /*--------------------------------------------------------------
@@ -327,7 +319,6 @@ padding: 20px 0px;
               font-size: 15px;
               color: var(--navbar-color);
               font-weight: 500;
-              font-family: PingARLT-Medium;
               &.active{
                   // background-image: linear-gradient(to left, #8142FF 0%, #4CC4FF 100%) !important;
               background-color: var(--navs-color);
@@ -367,5 +358,10 @@ padding: 20px 0px;
 
 .box-container{
   padding-inline: 60px;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+  display: none !important;
 }
 

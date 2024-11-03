@@ -204,10 +204,19 @@
                     color: var(--navbar-color);
                     font-size: var(--navbar-fontSize);
                     font-weight: 400;
+                    position: relative;
                     &.active{
                         font-weight: bold;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 40px;
+                            height: 2px;
+                            background-color: var(--green-color);
+                            bottom: 4px;
                     }
                 }
+                    }
             }
         }
     }
@@ -215,13 +224,16 @@
 
 }
 
-.heading.scrolled{
-    .navbar{
-        border-radius: 0px;
-        top: 0px;
-         width: 100%;
-    }
+.heading .bottom-heading .navbar{
+&.scrolled{
+        // .navbar{
+            border-radius: 0px;
+            top: 0px;
+             width: 100%;
+             transition: var(--transition);
 
+        // }
+    }
 }
 
 

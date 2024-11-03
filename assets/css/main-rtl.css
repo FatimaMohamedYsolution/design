@@ -108,7 +108,7 @@ body {
   padding-inline: 25px;
   border-radius: 30px;
   position: absolute;
-  z-index: 9999;
+  z-index: 999;
   right: unset;
   left: 0;
 }
@@ -172,5 +172,63 @@ body {
   }
   .hero .hero-bg .custom-container .box-content .custon-banner-title {
     margin-inline-start: 0px;
+  }
+  .hero .wrapper-cards {
+    position: initial;
+    transform: none;
+    display: block;
+    width: 100%;
+  }
+  .hero .wrapper-cards .card-box {
+    position: relative;
+  }
+  .hero .wrapper-cards .card-box.first-card {
+    position: relative;
+    left: unset;
+    right: unset;
+    top: unset;
+    width: 100%;
+    margin: auto;
+  }
+  .hero .wrapper-cards .card-box.first-card:after {
+    width: 100%;
+  }
+  .hero .wrapper-cards .card-box.sec-card {
+    left: unset;
+    right: unset;
+    top: unset;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .hero .wrapper-cards .card-box.sec-card:after {
+    width: 100%;
+  }
+  .hero .wrapper-cards .card-box.third-card {
+    left: unset;
+    right: unset;
+    top: unset;
+    width: 100%;
+    margin: auto;
+  }
+  .hero .wrapper-cards .card-box.third-card:after {
+    width: 100%;
+  }
+  .hero .wrapper-cards .card-box .img-card img {
+    width: 100%;
+  }
+  .statistics .statistics-cards .card-box-bottom {
+    left: -35px;
+  }
+  .statistics .statistics-content {
+    margin-inline-start: 0px;
+    margin-top: 70px;
+  }
+  .footer .bg-footer .footer-left-side .box-social .bottom-sec {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .footer .bg-footer .footer-left-side .box-social .bottom-sec a {
+    margin-inline: 10px;
   }
 }/*# sourceMappingURL=main-rtl.css.map */

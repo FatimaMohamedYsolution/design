@@ -1,23 +1,14 @@
 
 
-// window.addEventListener("scroll" ,function(){
-//   if (window.scrollY > 300) {
-// $('.heading.bottom-heading.navbar').css({ backgroundColor:'red'});
-//   } 
-//   // else {
-//   //   // $('#naaaaaav').css({top:'-12px'});
-//   // }
 
-//   console.log(window.scrollY)
-// },false)
+// var headingNavbar=document.querySelectorAll(".navbar");
+const header = document.querySelector('nav');
 
-var headingNavbar=document.querySelectorAll(".navbar");
-
-window.addEventListener("scroll" ,() =>{
+window.addEventListener("scroll" ,function(e){
   if (window.scrollY > 300) {
-    headingNavbar.classList.add("scrolled");
+    header.classList.add("scrolled");
   } else {
-    headingNavbar.classList.remove("scrolled");
+    header.classList.remove("scrolled");
   }
 
   console.log(window.scrollY)

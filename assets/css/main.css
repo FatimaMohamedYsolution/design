@@ -28,24 +28,33 @@
 # General
 --------------------------------------------------------------*/
 @font-face {
-  font-family: PingARLT-Medium;
-  src: url(../Main-font/Font/PingAR+LT-Medium.otf);
-}
-@font-face {
-  font-family: PingARLT-Light;
+  font-family: PingAR;
   src: url(../Main-font/Font/PingAR+LT-Light.otf);
+  font-weight: 300; /* Light */
 }
 @font-face {
-  font-family: PingARR;
-  src: url(../Main-font/Font/PingAR+LT-Bold.otf);
-}
-@font-face {
-  font-family: PingARLT-Regular;
+  font-family: PingAR;
   src: url(../Main-font/Font/PingAR+LT-Regular.otf);
+  font-weight: 400; /* Regular */
+}
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Medium.otf);
+  font-weight: 500; /* Normal */
+}
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Bold.otf);
+  font-weight: 600; /* Bold */
+}
+@font-face {
+  font-family: PingAR;
+  src: url(../Main-font/Font/PingAR+LT-Heavy.otf);
+  font-weight: 700; /* Heavy */
 }
 body {
   overflow-x: hidden;
-  font-family: PingARR;
+  font-family: PingAR;
 }
 
 html {
@@ -94,7 +103,6 @@ input:focus-visible {
 p.desc {
   font-size: 18px;
   font-weight: 400;
-  font-family: PingARLT-Regular;
   color: var(--dark-color);
   padding: 20px 0px;
 }
@@ -236,7 +244,6 @@ p.desc {
   font-size: 15px;
   color: var(--navbar-color);
   font-weight: 500;
-  font-family: PingARLT-Medium;
 }
 .nav-tabs .nav-item a.nav-link.active {
   background-color: var(--navs-color);
@@ -267,12 +274,16 @@ p.desc {
   padding-inline: 60px;
 }
 
+.fade:not(.show) {
+  opacity: 0;
+  display: none !important;
+}
+
 a.primary-btn {
   background-color: var(--secondary-color);
   font-size: var(--btns-fontSize);
   color: var(--white-color);
   font-weight: 700;
-  font-family: PingARR;
   padding: 10px 15px;
   margin-top: 15px;
   display: flex;
@@ -487,19 +498,29 @@ a.secondary-btn svg.fa-arrow-right {
   color: var(--navbar-color);
   font-size: var(--navbar-fontSize);
   font-weight: 400;
+  position: relative;
 }
 .heading .bottom-heading .navbar .navbar-nav .nav-item .nav-link.active {
   font-weight: bold;
 }
+.heading .bottom-heading .navbar .navbar-nav .nav-item .nav-link.active::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: 4px;
+}
 
-.heading.scrolled .navbar {
+.heading .bottom-heading .navbar.scrolled {
   border-radius: 0px;
   top: 0px;
   width: 100%;
+  transition: var(--transition);
 }
 
 .hero {
-  height: auto;
+  height: calc(100vh - 100px);
 }
 .hero .hero-bg {
   position: relative;
@@ -559,7 +580,6 @@ a.secondary-btn svg.fa-arrow-right {
   margin-top: 10px;
   font-size: 25px;
   font-weight: 400;
-  font-family: PingARLT-Regular;
 }
 .hero .wrapper-cards {
   margin-top: 100px;
@@ -654,7 +674,6 @@ a.secondary-btn svg.fa-arrow-right {
   font-size: var(--moreLink-fontSize);
   color: var(--white-color);
   font-weight: 400;
-  font-family: PingARLT-Light;
 }
 
 .services {
@@ -734,7 +753,6 @@ a.secondary-btn svg.fa-arrow-right {
 .services .sec-bg .card-box .content p {
   font-size: 16px;
   font-weight: 400;
-  font-family: PingARLT-Regular;
   color: var(--dark-color);
   margin-top: 8px;
   text-align: start;
@@ -860,7 +878,6 @@ a.secondary-btn svg.fa-arrow-right {
   font-size: 17px;
   color: #000;
   font-weight: 400;
-  font-family: PingARLT-Regular;
   padding: 0;
   margin: 0;
 }
@@ -969,8 +986,8 @@ a.secondary-btn svg.fa-arrow-right {
   justify-content: center;
 }
 #mySwiper .box-swiper .card-box .content .img-box img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 #mySwiper .box-swiper .card-box .content h3 {
   font-size: var(--serv-card-heading);
@@ -981,7 +998,6 @@ a.secondary-btn svg.fa-arrow-right {
 #mySwiper .box-swiper .card-box .content p {
   font-size: 16px;
   font-weight: 400;
-  font-family: PingARLT-Regular;
   color: var(--dark-color);
   margin-top: 8px;
   line-height: 1.67;
@@ -1109,7 +1125,6 @@ a.secondary-btn svg.fa-arrow-right {
 .footer .bg-footer .footer-right-side .first-box p {
   font-size: 18px;
   font-weight: 400;
-  font-family: PingARLT-Regular;
   color: var(--navbar-color);
   margin: 16px 0px;
 }
@@ -1124,7 +1139,6 @@ a.secondary-btn svg.fa-arrow-right {
   font-size: 16px;
   font-weight: 500;
   color: var(--dark-color);
-  font-family: PingARLT-Medium;
   display: block;
   margin-bottom: 25px;
 }
@@ -1139,7 +1153,6 @@ a.secondary-btn svg.fa-arrow-right {
 .footer .bg-footer .footer-right-side .sec-box .item a {
   font-size: 14px;
   font-weight: 400;
-  font-family: PingARLT-Regular;
   color: var(--dark-color);
   display: block;
   margin-bottom: 10px;
@@ -1163,11 +1176,14 @@ a.secondary-btn svg.fa-arrow-right {
   justify-content: center;
 }
 .footer .bg-footer .footer-left-side .box-social .special-person .img-box img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
 }
 .footer .bg-footer .footer-left-side .box-social .special-person .text {
   border: 1px solid var(--third-color);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-block: 6px;
 }
 .footer .bg-footer .footer-left-side .box-social .special-person .text p {
   font-size: 12px;
@@ -1180,14 +1196,24 @@ a.secondary-btn svg.fa-arrow-right {
 .footer .bg-footer .footer-left-side .box-social .social-icons {
   margin: 20px 5px 10px;
 }
+.footer .bg-footer .footer-left-side .box-social .social-icons a {
+  position: relative;
+}
 .footer .bg-footer .footer-left-side .box-social .social-icons a.socila-media {
   font-size: 15px;
   font-weight: 700;
   color: var(--white-color);
-  margin: 50px 0 10px;
+  margin: 50px 0 20px;
   display: block;
   width: 62px;
-  border-bottom: 1px solid var(--white-color);
+}
+.footer .bg-footer .footer-left-side .box-social .social-icons a.socila-media::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: var(--white-color);
+  bottom: -5px;
 }
 .footer .bg-footer .footer-left-side .box-social .icons {
   display: flex;
@@ -1200,17 +1226,13 @@ a.secondary-btn svg.fa-arrow-right {
 }
 .footer .bg-footer .footer-left-side .box-social .bottom-sec {
   display: flex;
-  justify-content: center;
-  padding: 10px 5px 0px;
-}
-.footer .bg-footer .footer-left-side .box-social .bottom-sec img:last-child {
-  margin-inline-start: 3px;
+  justify-content: space-evenly;
+  padding: 10px 0px 0px;
 }
 .footer .bg-footer .copy-write p {
   font-size: 16px;
   color: var(--dark-color);
   font-weight: 400;
-  font-family: PingARLT-Regular;
   text-align: center;
   padding: 20px 0px;
 }
@@ -1289,16 +1311,53 @@ a.secondary-btn svg.fa-arrow-right {
     width: 100%;
     margin: auto;
   }
+  .hero {
+    height: auto;
+  }
   .hero .hero-bg {
     -webkit-clip-path: none;
             clip-path: none;
   }
+  .hero .wrapper-cards {
+    position: initial;
+    transform: none;
+  }
+  .hero .wrapper-cards .card-box {
+    position: relative;
+  }
+  .hero .wrapper-cards .card-box.first-card {
+    position: relative;
+    left: unset;
+    right: 130px;
+    top: 25px;
+  }
+  .hero .wrapper-cards .card-box.sec-card {
+    z-index: -9;
+    position: relative;
+    top: -37px;
+    left: unset;
+    right: -25px;
+  }
+  .hero .wrapper-cards .card-box.third-card {
+    position: relative;
+    top: -135px;
+    left: unset;
+    right: 25px;
+  }
+  .services .sec-bg .card-box {
+    margin: auto;
+  }
   .main-heading h2.title {
     width: 100%;
     text-align: center;
+    font-size: 25px;
   }
   .navs-taps-custom {
     margin-top: 0px;
+    gap: 15px 0px;
+  }
+  .serv-content {
+    margin-top: 50px;
   }
   .section-title {
     text-align: center;
@@ -1306,5 +1365,108 @@ a.secondary-btn svg.fa-arrow-right {
   .section-title .sec-after-before h3 {
     font-size: 20px;
     text-align: start;
+  }
+  .section-title-banner .sec-after-before-banner h3 {
+    font-size: 20px;
+  }
+  .statistics {
+    height: auto;
+  }
+  .statistics .statistics-sec {
+    background-image: none;
+    width: 100%;
+    margin-inline-start: 0px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .statistics .statistics-sec .statistics-card-one {
+    position: initial;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .statistics .statistics-sec .statistics-card-two {
+    position: initial;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .statistics .statistics-sec .statistics-card-two .container-icon {
+    background-color: var(--icons-bg-color);
+  }
+  .statistics .statistics-sec .statistics-card-three {
+    position: initial;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .statistics .statistics-sec .statistics-card-four {
+    position: initial;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .statistics .statistics-sec .statistics-card-four .container-icon {
+    background-color: var(--icons-bg-color);
+  }
+  .statistics .statistics-sec .statistics-card-five {
+    position: initial;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .statistics .statistics-sec .statistics-card-six {
+    position: initial;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .statistics .statistics-sec .statistics-card-six .container-icon {
+    background-color: var(--icons-bg-color);
+  }
+  .evaluation .evaluation-btns {
+    margin-inline-start: 0px;
+    margin-top: 30px;
+  }
+  .footer .bg-footer .footer-right-side .first-box {
+    width: 100%;
+  }
+  .footer .bg-footer .footer-left-side .box-social .special-person {
+    margin-inline-start: 20px;
+  }
+  .footer .bg-footer .footer-left-side .box-social .special-person .text {
+    padding-block: 15px;
+    padding-inline: 10px;
+  }
+  .footer .bg-footer .footer-left-side .box-social .social-icons {
+    padding-inline-start: 20px;
+  }
+  .footer .bg-footer .footer-left-side .box-social .social-icons a.socila-media {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer .bg-footer .footer-left-side .box-social .icons {
+    justify-content: center;
+  }
+  .footer .bg-footer .footer-left-side .box-social .icons .item {
+    margin-inline: 5px;
+  }
+  .footer .bg-footer .footer-left-side .box-social .icons .footer .bg-footer .footer-left-side .box-social .bottom-sec {
+    justify-content: center;
+  }
+  p.desc {
+    font-size: 15px;
+    padding: 30px 0px;
+  }
+  .col-top {
+    margin-top: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
