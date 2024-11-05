@@ -484,12 +484,16 @@
     background-image: url(../img/news-bg.png);
     background-position: bottom;
     background-size: cover;
+    .news-nav-tabs{
+        padding-top: 30px;
+        margin-bottom: -100px;
+    }
     }
 }
 
 #mySwiper{
     // height: 530px;
-    margin-top: 70px;
+    // margin-top: 70px;
     .box-swiper {
         .card-box{
             position: relative;
@@ -723,6 +727,8 @@
 // //   --------------------------------------------------------------*/
 
 
-
+.bd-highlight{
+    background-color: red;
+}
 
 

@@ -73,9 +73,11 @@ var swiper = new Swiper("#mySwiper", {
   autoplay: {
     delay: 4000,
     disableOnInteraction: false, // Continue autoplay even after user interactions
-
   },
   centeredSlides: true,
+  loop:true,
+  centeredSlides:true,
+  // centeredSlidesBounds:true,
   slidesPerGroup: 1,
   pagination: {
       el: ".swiper-pagination",

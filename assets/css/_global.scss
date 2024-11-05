@@ -312,6 +312,7 @@ padding: 20px 0px;
 .nav-tabs{
   .nav-item{
       margin-inline: 10px;
+      height: 55px;
       a{
           &.nav-link{
               background-color: var(--white-color);
@@ -319,6 +320,8 @@ padding: 20px 0px;
               font-size: 15px;
               color: var(--navbar-color);
               font-weight: 500;
+              height: 55px;
+              border: 0;
               &.active{
                   // background-image: linear-gradient(to left, #8142FF 0%, #4CC4FF 100%) !important;
               background-color: var(--navs-color);
@@ -368,11 +371,15 @@ padding: 20px 0px;
 //calender
 .calendar-sec-two{
   position: fixed;
-  top: 75%;
+  top: 70%;
   left: -14px;
   right: unset;
   .calendar-content {
     margin-inline-end: -80px;
+    margin-top: -67px;
+    .card-box-two{
+      height: 180px;
+    }
   }
 }
 
@@ -383,8 +390,10 @@ padding: 20px 0px;
   right: unset;
   .calendar-content {
     margin-inline-end: -69px;
+    margin-top: -55px;
     .card-box-one{
-      margin-top: 7px;
+      height: 155px;
+      // margin-top: 7px;
     }
   }
 
@@ -400,8 +409,8 @@ padding: 20px 0px;
       &.calendar-btn{
         background-color: var(--primary-color);
         transform: rotate(-90deg);
-        height: 60px;
-        padding-block: 6px 10px;
+        height: 45px;
+        // padding-block: 6px 10px;
         padding-inline: 20px;
         border-radius: 14px;
         color: #fff;
@@ -419,8 +428,8 @@ padding: 20px 0px;
       }
     }
     .calendar-content {
-      margin-top: -67px;
       max-width: 430px;
+      transition: none !important;
       .card-body{
           .calendar-date{
             width: 100px;

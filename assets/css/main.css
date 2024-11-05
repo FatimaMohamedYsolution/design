@@ -237,6 +237,7 @@ p.desc {
 
 .nav-tabs .nav-item {
   margin-inline: 10px;
+  height: 55px;
 }
 .nav-tabs .nav-item a.nav-link {
   background-color: var(--white-color);
@@ -244,6 +245,8 @@ p.desc {
   font-size: 15px;
   color: var(--navbar-color);
   font-weight: 500;
+  height: 55px;
+  border: 0;
 }
 .nav-tabs .nav-item a.nav-link.active {
   background-color: var(--navs-color);
@@ -277,12 +280,16 @@ p.desc {
 
 .calendar-sec-two {
   position: fixed;
-  top: 75%;
+  top: 70%;
   left: -14px;
   right: unset;
 }
 .calendar-sec-two .calendar-content {
   margin-inline-end: -80px;
+  margin-top: -67px;
+}
+.calendar-sec-two .calendar-content .card-box-two {
+  height: 180px;
 }
 
 .calendar-sec-one {
@@ -293,9 +300,10 @@ p.desc {
 }
 .calendar-sec-one .calendar-content {
   margin-inline-end: -69px;
+  margin-top: -55px;
 }
 .calendar-sec-one .calendar-content .card-box-one {
-  margin-top: 7px;
+  height: 155px;
 }
 
 .calendar-sec {
@@ -308,8 +316,7 @@ p.desc {
 .calendar-sec button.calendar-btn {
   background-color: var(--primary-color);
   transform: rotate(-90deg);
-  height: 60px;
-  padding-block: 6px 10px;
+  height: 45px;
   padding-inline: 20px;
   border-radius: 14px;
   color: #fff;
@@ -325,8 +332,8 @@ p.desc {
   transform: rotate(90deg);
 }
 .calendar-sec .calendar-content {
-  margin-top: -67px;
   max-width: 430px;
+  transition: none !important;
 }
 .calendar-sec .calendar-content .card-body .calendar-date {
   width: 100px;
@@ -500,14 +507,40 @@ a.secondary-btn svg.fa-arrow-right {
   border-radius: 8px;
   padding: 10px;
 }
+.heading .top-heading .top-links .dropdown ul.custom-drob li.li-custom .sub-menu .bottom-sec ul {
+  /* width: 100%; */
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 .heading .top-heading .top-links .dropdown ul.custom-drob li.li-custom .sub-menu .bottom-sec ul li {
   margin: 5px;
   background-color: var(--white-color);
   padding: 8px;
+  padding-inline: 0px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 8px -5px;
 }
 .heading .top-heading .top-links .dropdown ul.custom-drob li.li-custom .sub-menu .bottom-sec ul li a {
   color: var(--forth-color);
-  font-size: var(--moreLink-fontSize);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  display: block;
+  margin: auto;
+  width: 22ch;
+  font-size: 12px;
+  padding-block: 5px;
+  font-weight: 500;
 }
 .heading .top-heading .top-links .dropdown ul.custom-drob li.li-custom:hover .sub-menu {
   display: block;
@@ -1044,10 +1077,11 @@ a.secondary-btn svg.fa-arrow-right {
   background-position: bottom;
   background-size: cover;
 }
-
-#mySwiper {
-  margin-top: 70px;
+.news .news-bg .news-nav-tabs {
+  padding-top: 30px;
+  margin-bottom: -100px;
 }
+
 #mySwiper .box-swiper .card-box {
   position: relative;
   text-align: center;
@@ -1202,6 +1236,10 @@ a.secondary-btn svg.fa-arrow-right {
 .evaluation .evaluation-btns .btn-box .btn-ev.active {
   border: 1px solid var(--third-color);
   background-color: var(--third-color);
+}
+
+.bd-highlight {
+  background-color: red;
 }
 
 /*--------------------------------------------------------------
@@ -1539,6 +1577,9 @@ a.secondary-btn svg.fa-arrow-right {
   }
   .statistics .statistics-sec .statistics-card-six .container-icon {
     background-color: var(--icons-bg-color);
+  }
+  .news .news-bg .news-nav-tabs {
+    margin-bottom: 0px;
   }
   .evaluation .evaluation-btns {
     margin-inline-start: 0px;
