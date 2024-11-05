@@ -291,6 +291,29 @@
         margin-top: 25px;
     }
 
+
+
+// calender
+.calendar-sec{
+    .calendar-content {
+        max-width: 300px;
+    }
+}
+.calendar-sec-one {
+    top: 48%;
+    left: -15px;
+    right: unset;
+}
+.calendar-sec-two {
+    top: 78%;
+    left: -30px;
+    right: unset;
+    .calendar-content {
+        margin-inline-end: -78px;
+    }
+}
+
+
 }
 
 @media(max-width:425px){

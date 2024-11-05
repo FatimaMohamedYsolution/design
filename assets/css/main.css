@@ -29,27 +29,27 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: PingAR;
-  src: url(../Main-font/Font/PingAR+LT-Light.otf);
+  src: url(../Main-font/Font//PingAR-LT-Light.otf);
   font-weight: 300; /* Light */
 }
 @font-face {
   font-family: PingAR;
-  src: url(../Main-font/Font/PingAR+LT-Regular.otf);
+  src: url(../Main-font/Font/PingAR-LT-Regular.otf);
   font-weight: 400; /* Regular */
 }
 @font-face {
   font-family: PingAR;
-  src: url(../Main-font/Font/PingAR+LT-Medium.otf);
+  src: url(../Main-font/Font/PingAR-LT-Medium.otf);
   font-weight: 500; /* Normal */
 }
 @font-face {
   font-family: PingAR;
-  src: url(../Main-font/Font/PingAR+LT-Bold.otf);
+  src: url(../Main-font/Font/PingAR-LT-Bold.otf);
   font-weight: 600; /* Bold */
 }
 @font-face {
   font-family: PingAR;
-  src: url(../Main-font/Font/PingAR+LT-Heavy.otf);
+  src: url(../Main-font/Font/PingAR-LT-Heavy.otf);
   font-weight: 700; /* Heavy */
 }
 body {
@@ -270,13 +270,121 @@ p.desc {
   fill: transparent;
 }
 
-.box-container {
-  padding-inline: 60px;
-}
-
 .fade:not(.show) {
   opacity: 0;
   display: none !important;
+}
+
+.calendar-sec-two {
+  position: fixed;
+  top: 75%;
+  left: -14px;
+  right: unset;
+}
+.calendar-sec-two .calendar-content {
+  margin-inline-end: -80px;
+}
+
+.calendar-sec-one {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  right: unset;
+}
+.calendar-sec-one .calendar-content {
+  margin-inline-end: -69px;
+}
+.calendar-sec-one .calendar-content .card-box-one {
+  margin-top: 7px;
+}
+
+.calendar-sec {
+  margin-inline-end: 0;
+  margin-inline-start: auto;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9999;
+}
+.calendar-sec button.calendar-btn {
+  background-color: var(--primary-color);
+  transform: rotate(-90deg);
+  height: 60px;
+  padding-block: 6px 10px;
+  padding-inline: 20px;
+  border-radius: 14px;
+  color: #fff;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
+  border: 0 !important;
+}
+.calendar-sec button.calendar-btn img {
+  margin-inline-end: 7px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(90deg);
+}
+.calendar-sec .calendar-content {
+  margin-top: -67px;
+  max-width: 430px;
+}
+.calendar-sec .calendar-content .card-body .calendar-date {
+  width: 100px;
+  background-color: #f5f5f5;
+  padding-top: 4px;
+  text-align: center;
+  border-radius: 5px;
+}
+.calendar-sec .calendar-content .card-body .calendar-date span.day-name {
+  background-color: var(--green-color);
+  text-align: center;
+  color: #fff;
+  border-radius: 17px;
+  margin: 3px;
+  height: 30px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-sec .calendar-content .card-body .calendar-date span.day-month {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #4f4f4f;
+  padding-block: 10px;
+}
+.calendar-sec .calendar-content .card-body .calendar-date span.specific-date {
+  margin-top: auto;
+  margin-bottom: 0;
+  background-color: var(--icons-bg-color);
+  color: var(--white-color);
+  font-size: 14px;
+  padding-top: 2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.calendar-sec .calendar-info {
+  margin-inline-start: 20px;
+  margin-top: 10px;
+  margin-inline-end: 20px;
+}
+.calendar-sec .calendar-info h3 {
+  color: var(--dark-color);
+  font-size: var(--btns-fontSize);
+  font-weight: 500;
+}
+.calendar-sec .calendar-info p {
+  color: var(--navbar-color);
+  font-size: var(--moreLink-fontSize);
+  font-weight: 400;
+  margin-block: 5px;
+}
+.calendar-sec .calendar-info .more-calender {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  color: var(--primary-color);
+  font-size: 18px;
 }
 
 a.primary-btn {
@@ -1468,5 +1576,21 @@ a.secondary-btn svg.fa-arrow-right {
   }
   .col-top {
     margin-top: 25px;
+  }
+  .calendar-sec .calendar-content {
+    max-width: 300px;
+  }
+  .calendar-sec-one {
+    top: 48%;
+    left: -15px;
+    right: unset;
+  }
+  .calendar-sec-two {
+    top: 78%;
+    left: -30px;
+    right: unset;
+  }
+  .calendar-sec-two .calendar-content {
+    margin-inline-end: -78px;
   }
 }/*# sourceMappingURL=main.css.map */
