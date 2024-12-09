@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,32 +33,37 @@
 
 <!-- loader -->
 
-
 <!-- ======= Start Calender ======= -->
 <section class="calendar-sec calendar-sec-one  d-flex flex-row-reverce">
-  <div>
     <div class="collapse collapse-horizontal calendar-content" id="collapseWidthExample" >
       <div class="card card-body card-box-one">
-        <div class="d-flex">
-          <div class="calendar-date d-flex flex-column">
-            <span class="day-name">الإثنين</span>
-            <span class="d-flex flex-column day-month">
-              <span class="day">4</span>
-              <span class="month">نوفمبر</span>
-            </span>
-            <span class="specific-date">4-11-2024</span>
-          </div>
+        <div class="d-flex justify-content-center">
           <div class="calendar-info">
-            <h3>بداية إجازة منتصف الفصل الدراسي</h3>
-            <p>اليوم: الإثنين</p>
-            <p>التاريخ الهجري: 1446/05/06</p>
-            <a href="#" class="more-calender">المزيد</a>
+            <h3>المؤتمر الدولي السادس لمدن التعلم</h3>
+            <div class="wrapper-date-content">
+               <div class="calendar-date d-flex flex-column">
+                  <span class="day-name">الأحد</span>
+                  <span class="d-flex flex-column day-month">
+                    <span class="day">22</span>
+                    <span class="month">سبتمبر</span>
+                  </span>
+                  <span class="specific-date">22/09/2024</span>
+                </div>
+            </div>
+            <div class="date-bottom">
+              <p>
+                <span>التاريخ الهجري: </span>
+               <span> 19/03/1446</span>
+                </p>
+            </div>
+            <a href="#" class="more-calender-link">
+              <span><i class="fa-solid fa-arrow-right"></i></span>
+              <span>المزيد</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-   <div>
      <button
        class="calendar-btn"
        type="button"
@@ -66,88 +72,417 @@
        data-mdb-target="#collapseWidthExample"
        aria-expanded="false"
        aria-controls="collapseWidthExample">
-      <img src="assets/img/global-calender.svg" alt="">
-       التقويم العام
+      <img src="assets/img/global-calender.svg" alt="" class="ms-2">
+       <span>التقويم</span>
      </button>
+</section>
+<!-- ======= End Calender ======= -->
+<!-- ======= Start start version ======= -->
+ <div class="start-version">
+  <h3>نسخة تجريبية</h3>
+ </div>
+<!-- ======= End start version ======= -->
+
+
+
+<!-- ======= Start chat-setting ======= -->
+
+<!-- ======= Start chatbot ======= -->
+ <a class="open-chat" onclick="openDialogue('chat-popup', '-480px')">
+  <div class="icon-box">
+      <img src="assets/img/chat-icon.svg" alt="" srcset="">
+  </div>
+</a>
+
+<div class="chat-popup" id="chat-popup">
+  <div class="chat_header">
+    <div class="title">
+      <figure>
+        <img src="assets/img/chat-icon.svg" alt="" srcset="">
+      </figure>
+      <!-- <i class="fa-solid fa-phone"></i> -->
+      <span class="i18n" data-message="CallbackTitle">المساعد الذكي</span>
+  </div>
+  <div class="close">
+    <figure onclick="minimizeDialogue('chat-popup', '-426px')">
+      <img id="minimize-chat-popup" src="assets/img/minus__icon.png" alt="">
+      <img id="maximize-chat-popup" src="assets/img/maximise__icon.png" alt="">
+    </figure>
+    <figure onclick="hideDialougue('chat-popup', '-480px')">
+      <img src="assets/img/close__icon.png" alt="">
+    </figure>
     </div>
-   
- </section>
-<!-- ======= Start  ======= -->
-<!-- ======= Start Calender ======= -->
-<section class="calendar-sec calendar-sec-two d-flex flex-row-reverce">
-  <div>
-    <div class="collapse collapse-horizontal calendar-content" id="collapseWidthExample-1" >
-      <div class="card card-body card-box-two">
-        <div class="d-flex">
-          <div class="calendar-date d-flex flex-column">
-            <span class="day-name">الإثنين</span>
-            <span class="d-flex flex-column day-month">
-              <span class="day">4</span>
-              <span class="month">نوفمبر</span>
-            </span>
-            <span class="specific-date">4-11-2024</span>
+  </div>
+  <div class="chat-container">
+    <div class="chat_converse" id="chatBotDiv">
+      <div class="chat_msg chat_msg_admin">
+        <div class="chat_avatar">
+          <img alt="Chat Bot" src="assets/img/get-help.png">
+        </div>
+        <p class="text welcom">مرحبا بك</p>
+        <ul>
+          <li><a href="">التمويل الشخصي</a></li>
+          <li><a href="">التمويل العقاري</a></li>
+          <li><a href="">أسعار المنتجات </a></li>
+        </ul>
+      </div>
+      <div class="chat_msg chat_msg_user" style="margin-top: 20px;">
+        <div class="user_avatar">
+          <img src="assets/img/profile.png" alt="">
+        </div>
+          <div class="user_message">
+              السلام عليكم
           </div>
-          <div class="calendar-info">
-            <h3>بداية إجازة منتصف الفصل الدراسي</h3>
-            <p>اليوم: الإثنين</p>
-            <p>التاريخ الهجري: 1446/05/06</p>
-            <a href="#" class="more-calender">المزيد</a>
+          <!-- <div class="loading-bubble blue a-message other" style="margin-top: 20px;">
+            <a>
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </a>
+          </div> -->
+      </div>
+
+      <div class="loading-bubble grey">
+        <a>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </a>
+      </div>
+
+      <div class="chat_msg chat_msg_admin" style="margin-top: 20px;">
+            <p class="text">يشترط الحصول على الجنسية السعودية للحصول على قرض في التمويل العقاري</p>
+            <a href="" class="btn btn-chat">
+                القائمة الرئيسية
+                <i class="fas fa-link"></i>
+            </a>
+            <ul class="chat__list ps-5">
+              <li><span>الحساب</span></li>
+              <li><span>التمويل</span></li>
+              <li><span>التمويل</span></li>
+            </ul>
+      </div> 
+    </div>
+    <div class="fab_field">
+      <button id="send_msg_icon" class="send_msg_icon">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+      <input type="text" id="chat_message" name="chat_message" placeholder="أكتب الرسالة" class="chat_text"
+        onkeydown="search(this)">
+    </div>
+
+  </div>
+
+</div>
+<!-- ======= End chatbot ======= -->
+
+<a class="open-setting" onclick="openDialogue('setting-popup', '-810px')">
+  <div class="icon-box">
+    <img src="assets/img/setting-icon.svg" alt="" srcset="">
+  </div>
+</a>
+
+
+<div class="setting-popup" id="setting-popup">
+  <div class="chat_header-ass">
+    <div class="title">
+      <span class="i18n" data-message="CallbackTitle">قائمة الوصول</span>
+  </div>
+  <div class="close">
+    <!-- <figure onclick="minimizeDialogue('setting-popup', '-710px')"> -->
+    <figure onclick="minimizeDialogue('setting-popup', '-560px')">
+      <img id="minimize-chat-popup" src="assets/img/minus__icon.png" alt="">
+      <img id="maximize-chat-popup" src="assets/img/maximise__icon.png" alt="">
+    </figure>
+    <figure onclick="hideDialougue('setting-popup', '-810px')">
+      <img src="assets/img/close__icon.png" alt="">
+    </figure>
+  </div>
+  </div>
+  <div class="setting-container">    
+    <div class="arabic-drob">
+      <div class="selected-language">
+        <div id="selectedBtn">
+          <span class="ar">AR</span>
+          <span>عربي (Arabic)</span>
+          <!-- <span><i class="fas fa-caret-left"></i></span> -->
+        </div>
+        <!-- <div class="search-langusges">
+          <div class="search-wrapper">
+            <div class="input-group  mb-3">
+              <input type="text" class="form-control input-search" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              <button class="btn search-btn" type="button" id="button-addon1">
+                <i class="fas fa-search btn-icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="language-wrapper">
+            <div class="this-language">
+              <span>English (USA)</span>
+              <span class="en">EN</span>
+            </div>
+            <div class="this-language">
+              <span>English (USA)2</span>
+              <span class="en">EN</span>
+            </div>
+            <div class="this-language">
+              <span>English (USA)3</span>
+              <span class="en">EN</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="box-wrapper">
+      <div class="row">
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/book.png" alt="">
+                <p class="features-text">قراءة الصفحة</p>
+              </div>
+              <div class="features-steps">
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step"></span></span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="toggleInvertMode">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/photo.png" alt="">
+                <p class="features-text">التباين</p>
+              </div>
+              <!-- <div class="features-steps"> -->
+                <!-- <span class="step-container"><span class="step" id="toggleInvertStepOne"></span></span> -->
+                <!-- <span class="step-container"><span class="step" id="toggleInvertStepTwo"></span></span>
+                <span class="step-container"><span class="step" id="toggleInvertStepThree"></span></span> -->
+              <!-- </div> -->
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="toggleLink">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/link.png" alt="">
+                <p class="features-text" id="featuresText">ابرز الروابط</p>
+              </div>
+              <!-- <div class="features-steps">
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step active"></span></span>
+              </div> -->
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="increaseFontBtn">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/font.png" alt="">
+                <p class="features-text">تكبير النص</p>
+              </div>
+               <div class="features-steps">
+                <span class="step-container"><span class="step" id="fontSizeStepOne"></span></span>
+                <span class="step-container"><span class="step" id="fontSizeStepTwo"></span></span>
+                <span class="step-container"><span class="step" id="fontSizeStepThree"></span></span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="increaseLetterSpacingBtn">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/text-spacing.png" alt="">
+                <p class="features-text" id="letterSpacingText">تباعد النص</p>
+              </div>
+              <div class="features-steps">
+                <span class="step-container"><span class="step" id="letterSpacingStepOne"></span></span>
+                <span class="step-container"><span class="step" id="letterSpacingStepTwo"></span></span>
+                <span class="step-container"><span class="step" id="letterSpacingStepThree"></span></span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="toggleButton">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/hide.png" alt="">
+                <p class="features-text" id="featuresTextToggle">إخفاء الصور</p>
+              </div>
+              <!-- <div class="features-steps">
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step"></span></span>
+              </div> -->
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="changeCursorBtn">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/pointer-icon.png" alt="">
+                <p class="features-text">المؤشر</p>
+              </div>
+              <div class="features-steps">
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step"></span></span>
+                <span class="step-container"><span class="step"></span></span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="toggleTextAlign">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/right-text-alignment.png" alt="">
+                <p class="features-text">محاذاه النص</p>
+              </div>
+              <div class="features-steps">
+                <span class="step-container"><span class="step" id="TextAlignStepOne"></span></span>
+                <span class="step-container"><span class="step" id="TextAlignStepTwo"></span></span>
+                <span class="step-container"><span class="step" id="TextAlignStepThree"></span></span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="toggleLineheight">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/line-height.png" alt="">
+                <p class="features-text">ارتفاع خط</p>
+              </div>
+              <div class="features-steps">
+                <span class="step-container"><span class="step" id="linesStepOne"></span></span>
+                <span class="step-container"><span class="step" id="linesStepTwo"></span></span>
+                <span class="step-container"><span class="step" id="linesStepThree"></span></span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="wrapper-features">
+            <button type="button" class="features-item" id="toggleSaturateMode">
+              <div class="features-item-enable">
+                <span>
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+              <div class="features-content">
+                <img src="assets/img/setting-icons/saturation.png" alt="">
+                <p class="features-text">التشبع</p>
+              </div>
+              <div class="features-steps">
+                <span class="step-container"><span class="step" id="toggleSaturateStepOne"></span></span>
+                <span class="step-container"><span class="step" id="toggleSaturateStepTwo"></span></span>
+                <span class="step-container"><span class="step" id="toggleSaturateStepThree"></span></span>
+              </div>
+            </button>
           </div>
         </div>
       </div>
+      
+        <button class="resetButton" id="resetButton">
+          <span>
+            <i class="fas fa-sync-alt"></i>
+          </span>
+         <span> إعادة تعيين كافة إعدادات إمكانية الوصول</span>
+        </button>
     </div>
   </div>
-   <div>
-     <button
-       class="calendar-btn"
-       type="button"
-       data-mdb-collapse-init
-       data-mdb-ripple-init
-       data-mdb-target="#collapseWidthExample-1"
-       aria-expanded="false"
-       aria-controls="collapseWidthExample-1">
-      <img src="assets/img/global-calender.svg" alt="">
-       التقويم الأكاديمي
-     </button>
-    </div>
- </section>
-<!-- ======= Start Calender ======= -->
+</div>
+
+<!-- ======= End chat-setting ======= -->
 
 
   <!-- ======= Start Header ======= -->
-<header class="heading fixed-top">
+<header class="heading fixed-top p-0">
   <div class="top-heading">
     <div class="right-sec">
-      <div class="section-title-heading">
-        <div class="sec-after-before-heading">
-            <div>
-                <h3 class="text-white">إدارة التعليم بالهيئة الملكية</h3>
-            </div>
-          </div>
-        </div>
+      <a href="#" class="logo-heading">
+        <img src="assets/img/asd.png" alt="">
+      </a>
+      <h3 class="heading-title">تعليم الهيئة الملكية للجبيل وينبع</h3>
     </div>
-    <div class="left-sec d-flex flex-column gap-2">
+    <div class="left-sec d-flex flex-column gap-1">
         <div class="top-links">
           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="dropdown-toggle btn-educate" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               قطاعات التعليم
+              <i class="fas fa-sort-down"></i>
             </button>
             <ul class="dropdown-menu custom-drob">
               <li class="li-custom">
-                <a class="dropdown-item" href="#">التعليم بالجبيل الصناعية</a>
+                <a class="dropdown-item" href="#">
+                  <img src="assets/img/book-icon.svg" alt="">
+                التعليم بالجبيل الصناعية
+                </a>
                 <div class="sub-menu">
-                  <ul class="d-flex">
-                    <li><a href="#">fdgjldfhglkj8</a></li>
-                    <li><a href="#">fdgjldfhgldfskj8</a></li>
-                    <li><a href="#">fdgjldfhgldfskj8</a></li>
-                    <li><a href="#">fdgjldfhgldfskj8</a></li>
+                  <ul class="top-sec">
+                    <li class="col-4"><a href="#">الروضات</a></li>
+                    <li class="col-4"><a href="#">المدارس</a></li>
                   </ul>
-                  <div class="bottom-sec mt-4 row">
-                    <!-- <div class="col-lg-3"><a href="#">كليةالجبيل الصناعية</a></div>
-                    <div class="col-lg-4"><a href="#">معهد الجبيل التقني</a></div>
-                    <div class="col-lg-5"><a href="#">معهد اللغة الانجليزية والسنة التحضيرية</a></div> -->
-                    
-                      <ul class="row d-flex">
+                  <div class="bottom-sec">
+                      <ul class="row">
                         <li class="col-lg-4">
                           <a href="#">كليةالجبيل الصناعية</a>
                         </li>
@@ -173,28 +508,18 @@
                           <a href="#">إدارة خدمات التعليم</a>
                         </li>
                         <li class="col-lg-4">
-                          <a href="#">قسم العلاقات الصناعية وخدمة المجتمع</a>
+                          <a href="#">قسم العلاقات الصناعية وخدمات المجتمع</a>
                         </li>
                       </ul>
-                      
-
-                      <!-- <ul class="d-flex">
-                        <li><a href="#">fdgjldfhglkj8</a></li>
-                      <li><a href="#">fdgjldfhgldfskj8</a></li>
-                      <li><a href="#">fdgjldfhgldfskj8</a></li>
-                      <li><a href="#">fdgjldfhgldfskj8</a></li>
-                      </ul>
-                      <ul class="d-flex">
-                        <li><a href="#">fdgjldfhglkj8</a></li>
-                      <li><a href="#">fdgjldfhgldfskj8</a></li>
-                      <li><a href="#">fdgjldfhgldfskj8</a></li>
-                      <li><a href="#">fdgjldfhgldfskj8</a></li>
-                      </ul> -->
+                    
                   </div>
                 </div>
-                
               </li>
-              <li><a class="dropdown-item" href="#">التعليم بينبع الصناعية</a></li>
+              <li><a class="dropdown-item" href="#">
+                <img src="assets/img/book-icon-green.svg" alt="">
+                التعليم بينبع الصناعية
+              </a>
+            </li>
             </ul>
             
           </div>
@@ -202,10 +527,13 @@
             <a href="#">الخدمات الالكترونيـة</a>
           </div>
           <div class="search-icon">
-            <i class="fas fa-search"></i>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fas fa-search btn-icon"></i>
+            </button>
           </div>
           <div class="globel-icon">
-            <img src="assets/img/global-img.png" alt="">
+            <img src="assets/img/earth.svg" alt="">
           </div>
         </div>
         <div class="bottom-links">
@@ -223,32 +551,100 @@
           </div>
         </div>
     </div>
-    </div>
+  </div>
 
   <div class="bottom-heading ">
     <div class="row">
       <div class="">
-        <nav class="navbar navbar-expand-lg py-0">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="mx-0 navbar-brand" href="#">
+            <!-- <a class="mx-0 navbar-brand" href="#">
               <img src="assets/img/logo-img.png" alt="">
-            </a>
+            </a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+              <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">عن التعليم</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">الدراسة بالهيئة</a>
+                  <span class="nav-link">عن التعليم</span>
+                  <i class="fas fa-chevron-down"></i>
+                  <ul class="main-dropdown">
+                    <li class="list-item">
+                      <a class="link-item" href="#">عن التعليم1</a>
+                    </li>
+                    <li class="list-item">
+                      <a class="link-item" href="#">
+                        <span>عن التعليم2 </span>
+                        <span><i class="fa-solid fa-chevron-right"></i></span>
+                      </a>
+                        <!--  -->
+                        <ul class="first-child-dropdown">
+                          <li class="list-item">
+                            <a class="link-item" href="#">عن التعليم1</a>
+                          </li>
+                          <li class="list-item ">
+                            <a class="link-item" href="#">عن التعليم2</a>
+                          </li>
+                          <li class="list-item-submenu">
+                            <a class="link-item" href="#">
+                              <span>عن التعليم3 </span>
+                              <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <ul class="second-child-dropdown">
+                              <li class="list-item">
+                                <a class="link-item" href="#">عن التعليم11</a>
+                              </li>
+                              <li class="list-item">
+                                <a class="link-item" href="#">عن التعليم32</a>
+                              </li>
+                             
+                            </ul>
+                          </li>
+                        </ul>
+                        <!--  -->
+                    </li>
+                    <li class="list-item">
+                      <a class="link-item" href="#">
+                        <span>عن التعليم3 </span>
+                        <span><i class="fa-solid fa-chevron-right"></i></span>
+                      </a>
+                      <!--  -->
+                      <ul class="first-child-dropdown">
+                        <li class="list-item">
+                          <a class="link-item" href="#">عن التعليم1</a>
+                        </li>
+                        <li class="list-item ">
+                          <a class="link-item" href="#">عن التعليم2</a>
+                        </li>
+                        <li class="list-item-submenu">
+                          <a class="link-item" href="#">
+                            <span>عن التعليم3 </span>
+                            <span><i class="fa-solid fa-chevron-right"></i></span>
+                          </a>
+                          <ul class="second-child-dropdown">
+                            <li class="list-item">
+                              <a class="link-item" href="#">عن التعليم11</a>
+                            </li>
+                            <li class="list-item">
+                              <a class="link-item" href="#">عن التعليم32</a>
+                            </li>
+                           
+                          </ul>
+                        </li>
+                      </ul>
+                      <!--  -->
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">التعليم العام</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> الكليات والمعاهد</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">التسجيل والقبول</a>
@@ -259,6 +655,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">المركز الإعلامي</a>
                 </li>
+                
               </ul>
             </div>
           </div>
@@ -267,6 +664,30 @@
     </div>
   </div>
 </header>
+
+
+
+<!-- Start Modal  -->
+<div class="modal modalfade custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content customModal-content">
+      <div class="modal-body">
+        <div class="input-group  mb-3">
+          <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          <button class="btn subscribe-now" type="button" id="button-addon1">
+            <i class="fas fa-search btn-icon"></i>
+          </button>
+          <button type="button" class="btn subscribe-delet" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
   <!-- ======= End Header ======= -->
 
   <!-- ======= Start Hero Section ======= -->
@@ -284,7 +705,9 @@
                     <div class="section-title-banner custon-banner-title">
                       <div class="sec-after-before-banner">
                           <div data-aos="fade-down" data-aos-duration="1700" data-aos-easing="linear">
-                            <h3 class="text-white">الانجـازات</h3>
+                            <h3 class="text-white">
+                              المؤتمر الدولي السادس لمدن التعليم
+                            </h3>
                         </div>
                       </div>
                     </div>
@@ -299,41 +722,114 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="wrapper-cards">
-              <div>
-                <div class="card-box first-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+            <div id="mySwiperLastHero" class="mySwiperLastHero">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="box-swiper">
+                    <div class="card-box">
                       <div class="img-card">
-                      <img src="assets/img/hero-1.png" alt="">
+                        <img src="assets/img/news-img1.png" alt="">
                       </div>
                       <div class="content">
-                        <img src="assets/img/star.png" alt="">
-                      <h3>لوريم</h3>
-                      <p>لوريم إيبسوم لوريم إيبسوم لوريم إيبسوم</p>
+                            <img src="assets/img/star.png" alt="">
+                          <h3>News Education Education Education</h3>
+                          <p>لوريم إيبسوم لوريم إيبسوم</p>
                       </div>
-                </div>
-                <div class="card-box sec-card"  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-                  <div class="img-card">
-                  <img src="assets/img/hero-1.png" alt="">
+                    </div>
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                        
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="content">
-                    <img src="assets/img/star.png" alt="">
-                    <h3>لوريم</h3>
-                    <p>لوريم إيبسوم لوريم إيبسوم لوريم إيبسوم</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                            <img src="assets/img/star.png" alt="">
+                          <h3>News Education Education Education</h3>
+                          <p>لوريم إيبسوم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                            <img src="assets/img/star.png" alt="">
+                          <h3>News Education Education Education</h3>
+                          <p>لوريم إيبسوم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                        
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card-box third-card"  data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-                        <div class="img-card">
-                        <img src="assets/img/hero-1.png" alt="">
-                        </div>
-                        <div class="content">
-                          <img src="assets/img/star.png" alt="">
-                          <h3>لوريم</h3>
-                          <p>لوريم إيبسوم لوريم إيبسوم لوريم إيبسوم</p>
-                        </div>
-                    </div>
-                    
+              <div class="swiper-pagination"></div>
             </div>
+
           </div>
         </div>
       </div>
@@ -343,398 +839,517 @@
   <!-- ======= End Hero Section ======= -->    
 
   <!-- ======= Start Services Section ======= -->
-  <section class="services" >
+  <section class="services">
     <div class="sec-bg">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2">
-            <div class="main-heading">
-              <h2 class="title"  data-aos="fade-down-left" data-aos-duration="950">
-                خدمـات الهيئـةالملكيـة بالجبيـل وينبـع
-              </h2>
+          <div class="col-12">
+              <div class="section-title">
+                <div class="sec-after-before">
+                    <div data-aos="fade-down-left" data-aos-duration="1000">
+                      <h3>
+                        الخدمات الإلكترونية
+                      </h3>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="wrapper-navs">
+          <div class="navs-services">
+            <ul class="nav nav-tabs border-0 navs-taps-custom" id="ex1" role="tablist">
+              <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1000">
+                <a data-mdb-tab-init class="nav-link border-0 active" id="ex1-tab-1" href="#ex1-tabs-1" role="tab"
+                  aria-controls="ex1-tabs-1" aria-selected="true">
+                  <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.26471 0C3.58606 0 2.93522 0.291757 2.45534 0.811089C1.97547 1.33042 1.70588 2.03479 1.70588 2.76923V13.8462C1.70588 14.5806 1.97547 15.285 2.45534 15.8043C2.93522 16.3236 3.58606 16.6154 4.26471 16.6154H16.2059C16.5638 16.0987 17.018 15.6691 17.539 15.3542C18.0599 15.0394 18.6362 14.8464 19.2304 14.7877C18.4125 13.8085 17.9446 12.5454 17.911 11.226C17.8775 9.9065 18.2804 8.61744 19.0473 7.59106C19.8142 6.56468 20.8947 5.86847 22.0939 5.62787C23.2931 5.38727 24.5323 5.6181 25.5882 6.27877V2.76923C25.5882 2.03479 25.3186 1.33042 24.8388 0.811089C24.3589 0.291757 23.7081 0 23.0294 0H4.26471ZM0.852941 18.4615H15.4382C15.3814 18.7606 15.3529 19.0683 15.3529 19.3846C15.3529 19.6923 15.3745 20 15.4178 20.3077H0.852941C0.626727 20.3077 0.409778 20.2104 0.249821 20.0373C0.0898634 19.8642 0 19.6294 0 19.3846C0 19.1398 0.0898634 18.905 0.249821 18.7319C0.409778 18.5588 0.626727 18.4615 0.852941 18.4615ZM26.4412 11.0769C26.4412 12.0562 26.0817 12.9953 25.4419 13.6878C24.8021 14.3802 23.9343 14.7692 23.0294 14.7692C22.1246 14.7692 21.2568 14.3802 20.6169 13.6878C19.9771 12.9953 19.6176 12.0562 19.6176 11.0769C19.6176 10.0977 19.9771 9.15851 20.6169 8.46607C21.2568 7.77363 22.1246 7.38462 23.0294 7.38462C23.9343 7.38462 24.8021 7.77363 25.4419 8.46607C26.0817 9.15851 26.4412 10.0977 26.4412 11.0769ZM29 19.3846C29 21.6831 27.2941 24 23.0294 24C18.7647 24 17.0588 21.6923 17.0588 19.3846C17.0588 18.6502 17.3284 17.9458 17.8083 17.4265C18.2882 16.9071 18.939 16.6154 19.6176 16.6154H26.4412C27.1198 16.6154 27.7707 16.9071 28.2505 17.4265C28.7304 17.9458 29 18.6502 29 19.3846Z"
+                      fill="white" />
+                  </svg>
+                  <!-- <img src="assets/img/visitor-solid.svg" alt="" class="active-icon"> -->
+                  زائـــر
+                </a>
+              </li>
+              <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1500">
+                <a data-mdb-tab-init class="nav-link border-0" id="ex1-tab-2" href="#ex1-tabs-2" role="tab"
+                  aria-controls="ex1-tabs-2" aria-selected="false">
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 7.33333C15 10.0344 12.7625 12.2222 10 12.2222C7.2375 12.2222 5 10.0344 5 7.33333L5.1375 6.18444L1.25 4.27778L10 0L18.75 4.27778V10.3889H17.5V4.88889L14.8625 6.18444L15 7.33333ZM10 14.6667C15.525 14.6667 20 16.8544 20 19.5556V22H0V19.5556C0 16.8544 4.475 14.6667 10 14.6667Z"
+                      fill="#333333" />
+                  </svg>
+                  <!-- <i class="fa-solid fa-graduation-cap"></i> -->
+                   <!-- <img src="assets/img/student.svg" alt="" class="normal-icon"> -->
+                   <!-- <img src="assets/img/student-solid.svg" alt="" class="active-icon"> -->
+                  طالب
+                </a>
+              </li>
+              <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="2000">
+                <a data-mdb-tab-init class="nav-link border-0" id="ex1-tab-3" href="#ex1-tabs-3" role="tab"
+                  aria-controls="ex1-tabs-3" aria-selected="false">
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 0C12.7625 0 15 2.18778 15 4.88889C15 7.59 12.7625 9.77778 10 9.77778C7.2375 9.77778 5 7.59 5 4.88889C5 2.18778 7.2375 0 10 0ZM15 12.8822C15 14.1778 14.65 17.1967 12.2625 20.57L11.25 14.6667L12.425 12.3689C11.65 12.2833 10.8375 12.2222 10 12.2222C9.1625 12.2222 8.35 12.2833 7.575 12.3689L8.75 14.6667L7.7375 20.57C5.35 17.1967 5 14.1778 5 12.8822C2.0125 13.7378 0 15.2778 0 17.1111V22H20V17.1111C20 15.2778 18 13.7378 15 12.8822Z"
+                      fill="#333333" />
+                  </svg>
+                  <!-- <img src="assets/img/staff.svg" alt="" class="normal-icon"> -->
+                  <!-- <img src="assets/img/staff-solid.svg" alt="" class="active-icon"> -->
+                  هيئة تدريس
+                </a>
+              </li>
+            </ul>
+              <a href="#" class="more">المزيد من الخدمات</a>
+          </div>
+
+        </div>
+        <div class="wrapper-navs-content">
+          <div class="tab-content" id="ex1-content">
+            <div class="d-flex align-items-center tab-pane fade show active row justify-content-center" id="ex1-tabs-1" role="tabpanel"
+              aria-labelledby="ex1-tab-1">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                    <img src="assets/img/service1.png" alt="" class="img-card">
+                  <div class="content">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="img-box">
+                        <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                      </div>
+                      <div>
+                       <h3> لوريم يبسوم</h3>
+                       </div>
+                    </div>
+                    <p>لوريم إيبسوم لوريم إيبسوم</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                    <img src="assets/img/service1.png" alt="" class="img-card">
+                  <div class="content">
+                    <div class="d-flex justify-content-center align-items-end">
+                      <div class="img-box">
+                        <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                      </div>
+                     <div>
+                      <h3>لوريم  إلوريم لوريم يبسوم</h3>
+                     </div>
+                    </div>
+                    <p>لوريم إيبسوم إيبسوم إيبسوم إيبسوم لوريم إيبسوم</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                    <img src="assets/img/service1.png" alt="" class="img-card">
+                  <div class="content">
+                    <div class="d-flex justify-content-center align-items-end">
+                      <div class="img-box">
+                        <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                      </div>
+                      <div>
+                        <h3>لوريم  إلوريم لوريم يبسوم</h3>
+                       </div>
+                    </div>
+                    <p>لوريم إيبسوم لوريم إيبسوم</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                    <img src="assets/img/service1.png" alt="" class="img-card">
+                  <div class="content">
+                    <div class="d-flex justify-content-center align-items-end">
+                      <div class="img-box">
+                        <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                      </div>
+                      <div>
+                        <h3>لوريم يبسوم</h3>
+                       </div>
+                    </div>
+                    <p>لوريم إيبسوم لوريم إيبسوم</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex align-items-center tab-pane fade justify-content-center" id="ex1-tabs-2" role="tabpanel"
+                aria-labelledby="ex1-tab-2">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم 2</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم 2</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم 2</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم 2</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center tab-pane fade justify-content-center" id="ex1-tabs-3" role="tabpanel"
+                aria-labelledby="ex1-tab-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
+                      <img src="assets/img/service1.png" alt="" class="img-card">
+                    <div class="content">
+                      <div class="d-flex justify-content-center align-items-end">
+                        <div class="img-box">
+                          <img src="assets/img/serve-vector.png" alt="" class="img-icon">
+                        </div>
+                        <h3>لوريم إيبسوم</h3>
+                      </div>
+                      <p>لوريم إيبسوم لوريم إيبسوم</p>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
-      
-              <!-- Tabs navs -->
-               <div class="row">
-                 <ul class="nav nav-tabs border-0 navs-taps-custom" id="ex1" role="tablist">
-                   <li class="nav-item" role="presentation"  data-aos="fade-down" data-aos-duration="1000">
-                     <a data-mdb-tab-init class="nav-link border-0 active" id="ex1-tab-1" href="#ex1-tabs-1" role="tab"
-                       aria-controls="ex1-tabs-1" aria-selected="true">
-                       <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path
-                           d="M4.26471 0C3.58606 0 2.93522 0.291757 2.45534 0.811089C1.97547 1.33042 1.70588 2.03479 1.70588 2.76923V13.8462C1.70588 14.5806 1.97547 15.285 2.45534 15.8043C2.93522 16.3236 3.58606 16.6154 4.26471 16.6154H16.2059C16.5638 16.0987 17.018 15.6691 17.539 15.3542C18.0599 15.0394 18.6362 14.8464 19.2304 14.7877C18.4125 13.8085 17.9446 12.5454 17.911 11.226C17.8775 9.9065 18.2804 8.61744 19.0473 7.59106C19.8142 6.56468 20.8947 5.86847 22.0939 5.62787C23.2931 5.38727 24.5323 5.6181 25.5882 6.27877V2.76923C25.5882 2.03479 25.3186 1.33042 24.8388 0.811089C24.3589 0.291757 23.7081 0 23.0294 0H4.26471ZM0.852941 18.4615H15.4382C15.3814 18.7606 15.3529 19.0683 15.3529 19.3846C15.3529 19.6923 15.3745 20 15.4178 20.3077H0.852941C0.626727 20.3077 0.409778 20.2104 0.249821 20.0373C0.0898634 19.8642 0 19.6294 0 19.3846C0 19.1398 0.0898634 18.905 0.249821 18.7319C0.409778 18.5588 0.626727 18.4615 0.852941 18.4615ZM26.4412 11.0769C26.4412 12.0562 26.0817 12.9953 25.4419 13.6878C24.8021 14.3802 23.9343 14.7692 23.0294 14.7692C22.1246 14.7692 21.2568 14.3802 20.6169 13.6878C19.9771 12.9953 19.6176 12.0562 19.6176 11.0769C19.6176 10.0977 19.9771 9.15851 20.6169 8.46607C21.2568 7.77363 22.1246 7.38462 23.0294 7.38462C23.9343 7.38462 24.8021 7.77363 25.4419 8.46607C26.0817 9.15851 26.4412 10.0977 26.4412 11.0769ZM29 19.3846C29 21.6831 27.2941 24 23.0294 24C18.7647 24 17.0588 21.6923 17.0588 19.3846C17.0588 18.6502 17.3284 17.9458 17.8083 17.4265C18.2882 16.9071 18.939 16.6154 19.6176 16.6154H26.4412C27.1198 16.6154 27.7707 16.9071 28.2505 17.4265C28.7304 17.9458 29 18.6502 29 19.3846Z"
-                           fill="white" />
-                       </svg>
-                       زائـــر
-                     </a>
-                   </li>
-                   <li class="nav-item" role="presentation"  data-aos="fade-down" data-aos-duration="1500">
-                     <a data-mdb-tab-init class="nav-link" id="ex1-tab-2" href="#ex1-tabs-2" role="tab"
-                       aria-controls="ex1-tabs-2" aria-selected="false">
-                       <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path
-                           d="M15 7.33333C15 10.0344 12.7625 12.2222 10 12.2222C7.2375 12.2222 5 10.0344 5 7.33333L5.1375 6.18444L1.25 4.27778L10 0L18.75 4.27778V10.3889H17.5V4.88889L14.8625 6.18444L15 7.33333ZM10 14.6667C15.525 14.6667 20 16.8544 20 19.5556V22H0V19.5556C0 16.8544 4.475 14.6667 10 14.6667Z"
-                           fill="#333333" />
-                       </svg>
-                       طالب
-                     </a>
-                   </li>
-                   <li class="nav-item" role="presentation"  data-aos="fade-down" data-aos-duration="2000">
-                     <a data-mdb-tab-init class="nav-link" id="ex1-tab-3" href="#ex1-tabs-3" role="tab"
-                       aria-controls="ex1-tabs-3" aria-selected="false">
-                       <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path
-                           d="M10 0C12.7625 0 15 2.18778 15 4.88889C15 7.59 12.7625 9.77778 10 9.77778C7.2375 9.77778 5 7.59 5 4.88889C5 2.18778 7.2375 0 10 0ZM15 12.8822C15 14.1778 14.65 17.1967 12.2625 20.57L11.25 14.6667L12.425 12.3689C11.65 12.2833 10.8375 12.2222 10 12.2222C9.1625 12.2222 8.35 12.2833 7.575 12.3689L8.75 14.6667L7.7375 20.57C5.35 17.1967 5 14.1778 5 12.8822C2.0125 13.7378 0 15.2778 0 17.1111V22H20V17.1111C20 15.2778 18 13.7378 15 12.8822Z"
-                           fill="#333333" />
-                       </svg>
-                       هيئة تدريس
-                     </a>
-                   </li>
-                 </ul>
-               </div>
-              <!-- Tabs navs -->
-  
-              <!-- Tabs content -->
-              <div class="row">
-                <div class="col-12">
-                  <div class="tab-content" id="ex1-content">
-                    <div class="d-flex align-items-center tab-pane fade show active row" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
-                      <div class="col-12 col-md-5">
-                        <div class="">
-                         <div class="serv-content">
-                          <div class="section-title">
-                            <div class="sec-after-before">
-                              <div class="border-after-before">
-                                <div data-aos="fade-down-left" data-aos-duration="1000">
-                                  <h3>
-                                    خدماتنا تسهل عليك
-                                  </h3>
-                                  <h3>
-                                    عملية التعليم وتجعلها أكثر متعة
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <p class="desc" data-aos="fade-down-left" data-aos-duration="1300">هنالـك العديـد من الأنواع المتوفرة لايبسـوم
-                            هنالـك العديـد من الأنواع المتوفرة لايبسـوم</p>
-                          <a href="#" class="secondary-btn d-none d-lg-block"  data-aos="zoom-in-up" data-aos-duration="1500">
-                            المزيد من الخدمات
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                         </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-7">
-                        <!-- <div class="wrapper-cards mt-0"> -->
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <div class="row">
-                              <div class="col-lg-12 mb-4">
-                                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                  <div class="img-card">
-                                    <img src="assets/img/service1.png" alt="">
-                                  </div>
-                                  <div class="content">
-                                    <div class="d-flex justify-content-center align-items-end">
-                                      <div class="img-box">
-                                        <img src="assets/img/serve-vector.png" alt="">
-                                      </div>
-                                      <h3>لوريم إيبسوم</h3>
-                                    </div>
-                                    <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                  <div class="img-card">
-                                    <img src="assets/img/service1.png" alt="">
-                                  </div>
-                                  <div class="content">
-                                    <div class="d-flex justify-content-center align-items-end">
-                                      <div class="img-box">
-                                        <img src="assets/img/serve-vector.png" alt="">
-                                      </div>
-                                      <h3>لوريم إيبسوم</h3>
-                                    </div>
-                                    <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <div class="col-top">
-                              <div class="row">
-                                <div class="col-lg-12 mb-4">
-                                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                    <div class="img-card">
-                                      <img src="assets/img/service1.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                      <div class="d-flex justify-content-center align-items-end">
-                                        <div class="img-box">
-                                          <img src="assets/img/serve-vector.png" alt="">
-                                        </div>
-                                        <h3>لوريم إيبسوم</h3>
-                                      </div>
-                                      <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-12">
-                                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                    <div class="img-card">
-                                      <img src="assets/img/service1.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                      <div class="d-flex justify-content-center align-items-end">
-                                        <div class="img-box">
-                                          <img src="assets/img/serve-vector.png" alt="">
-                                        </div>
-                                        <h3>لوريم إيبسوم</h3>
-                                      </div>
-                                      <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-              
-                          </div>
-                          <a href="#" class="secondary-btn d-lg-none d-block mx-auto mt-3"  data-aos="zoom-in-up" data-aos-duration="1500">
-                            المزيد من الخدمات
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row d-flex align-items-center tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-                      <div class="col-12 col-md-5">
-                        <div class="">
-                         <div class="serv-content">
-                          <div class="section-title">
-                            <div class="sec-after-before">
-                              <div class="border-after-before">
-                                <div data-aos="fade-down-left" data-aos-duration="1000">
-                                  <h3>
-                                    خدماتنا تسهل عليك 2
-                                  </h3>
-                                  <h3>
-                                    عملية التعليم وتجعلها أكثر متعة
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <p class="desc" data-aos="fade-down-left" data-aos-duration="1300">هنالـك العديـد من الأنواع المتوفرة لايبسـوم
-                            هنالـك العديـد من الأنواع المتوفرة لايبسـوم</p>
-                          <a href="#" class="secondary-btn d-none d-lg-block"  data-aos="zoom-in-up" data-aos-duration="1500">
-                            المزيد من الخدمات
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                         </div>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-7">
-                        <!-- <div class="wrapper-cards mt-0"> -->
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <div class="row">
-                              <div class="col-lg-12 mb-4">
-                                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                  <div class="img-card">
-                                    <img src="assets/img/service1.png" alt="">
-                                  </div>
-                                  <div class="content">
-                                    <div class="d-flex justify-content-center align-items-end">
-                                      <div class="img-box">
-                                        <img src="assets/img/serve-vector.png" alt="">
-                                      </div>
-                                      <h3>لوريم إيبسوم</h3>
-                                    </div>
-                                    <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                  <div class="img-card">
-                                    <img src="assets/img/service1.png" alt="">
-                                  </div>
-                                  <div class="content">
-                                    <div class="d-flex justify-content-center align-items-end">
-                                      <div class="img-box">
-                                        <img src="assets/img/serve-vector.png" alt="">
-                                      </div>
-                                      <h3>لوريم إيبسوم</h3>
-                                    </div>
-                                    <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <div class="col-top">
-                              <div class="row">
-                                <div class="col-lg-12 mb-4">
-                                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                    <div class="img-card">
-                                      <img src="assets/img/service1.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                      <div class="d-flex justify-content-center align-items-end">
-                                        <div class="img-box">
-                                          <img src="assets/img/serve-vector.png" alt="">
-                                        </div>
-                                        <h3>لوريم إيبسوم</h3>
-                                      </div>
-                                      <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-12">
-                                  <div class="card-box" data-aos="flip-left" data-aos-duration="1500">
-                                    <div class="img-card">
-                                      <img src="assets/img/service1.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                      <div class="d-flex justify-content-center align-items-end">
-                                        <div class="img-box">
-                                          <img src="assets/img/serve-vector.png" alt="">
-                                        </div>
-                                        <h3>لوريم إيبسوم</h3>
-                                      </div>
-                                      <p>لوريم إيبسوم لوريم إيبسوم</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-              
-                          </div>
-                          <a href="#" class="secondary-btn d-lg-none d-block mx-auto mt-3"  data-aos="zoom-in-up" data-aos-duration="1500">
-                            المزيد من الخدمات
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row d-flex align-items-center tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
-                      Tab 3 content
-                    </div>
-                </div>
-                </div>
-              
-              </div>
-              <!-- Tabs content -->
-        
-  
-        <!--  -->
-
-        <!--  -->
       </div>
     </div>
   </section>
 
   <!-- ======= End Services Section ======= -->
-
+  
   <!-- ======= Start Our Statistics Section ======= -->
 <section class="statistics">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-3">
-        <div class="statistics-cards">
-          <div class="card-box-top" data-aos="zoom-in-left" data-aos-duration="1500">
-            <div class="img-card">
-              <img src="assets/img/service1.png" alt="">
+        <div class="col-12">
+            <div class="section-title">
+              <div class="sec-after-before">
+                  <div data-aos="fade-down-left" data-aos-duration="1000">
+                    <h3>
+                      الاحصائيات
+                    </h3>
+                  </div>
+              </div>
             </div>
-          </div>
-          <div class="card-box-bottom" data-aos="zoom-in-left" data-aos-duration="1500">
-            <div class="img-card">
-              <img src="assets/img/serv1-1.png" alt="">
-            </div>
-          </div>
-        </div>
-
+      </div>
+    </div>
+    <div class="statistics-wrapper-navs">
+      <div class="navs-statistics">
+        <ul class="nav nav-tabs border-0" id="ex2" role="tablist">
+          <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1000">
+            <a data-mdb-tab-init class="nav-link active border-0" id="ex2-tab-1" href="#ex2-tabs-1" role="tab"
+              aria-controls="ex2-tabs-1" aria-selected="true">
+              إحصائيات عامة
+            </a>
+          </li>
+          <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1500">
+            <a data-mdb-tab-init class="nav-link border-0" id="ex2-tab-2" href="#ex2-tabs-2" role="tab"
+              aria-controls="ex2-tabs-2" aria-selected="false">
+              إحصائيات الجبيل
+            </a>
+          </li>
+          <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="2000">
+            <a data-mdb-tab-init class="nav-link border-0" id="ex2-tab-3" href="#ex2-tabs-3" role="tab"
+              aria-controls="ex2-tabs-3" aria-selected="false">
+              إحصائيات ينبع
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <div class="col-12 col-lg-9">
-        <div class="statistics-content">
-          <div class="section-title">
-            <div class="sec-after-before">
-              <div class="border-after-before">
-                <div data-aos="fade-down-left" data-aos-duration="1000">
-                  <h3>نحن نعمل بجد </h3>
-                  <h3>نظرة على إحصائياتنـــا</h3>
-                </div>
+    </div>
+    <div class="statistics-wrapper-content">
+      <div class="tab-content" id="ex2-content">
+        <div class="d-flex align-items-center tab-pane fade show active row justify-content-center" id="ex2-tabs-1" role="tabpanel"
+          aria-labelledby="ex2-tab-1">
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg1.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">2024/2025</h3>
+                <p>سنة بداية التعليم</p>
               </div>
             </div>
           </div>
-          <p class="desc" data-aos="fade-down-left" data-aos-duration="900">هنالـك العديـد من الأنواع المتوفرة لايبسـوم
-            هنالـك العديـد من الأنواع المتوفرة لايبسـوم</p>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg2.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">3.5K</h3>
+                <p>إحصائيات الطلاب</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg3.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">200</h3>
+                <p>المؤسسات التعليمية</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg4.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">175</h3>
+                <p>هيئة التدريس</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg6.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">80%</h3>
+                <p>المرافق التعليمية</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg5.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">%95</h3>
+                <p>التخرج والتوظيف</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div class="statistics-sec">
-          <div class="statistics-card statistics-card-one"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50">
-            <div class="container-icon">
-              <img src="assets/img/vector-svg1.svg" alt="">
-            </div>
-            <div>
-              <h3 class="percent">2024/2025</h3>
-              <p>سنة بداية التعليم</p>
-            </div>
-          </div>
-          <div class="statistics-card statistics-card-two" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50">
-            <div class="container-icon">
-              <img src="assets/img/vector-svg2.svg" alt="">
-            </div>
-            <div>
-              <h3 class="percent">3.5K</h3>
-              <p>إحصائيات الطلاب</p>
+
+        <div class="d-flex align-items-center tab-pane fade  row justify-content-center" id="ex2-tabs-2" role="tabpanel"
+          aria-labelledby="ex2-tab-2">
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg1.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">2024/2025</h3>
+                <p>سنة بداية التعليم</p>
+              </div>
             </div>
           </div>
-          <div class="statistics-card statistics-card-three" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
-            <div class="container-icon">
-              <img src="assets/img/vector-svg3.svg" alt="">
-            </div>
-            <div>
-              <h3 class="percent">200</h3>
-              <p>المؤسسات التعليمية</p>
-            </div>
-          </div>
-          <div class="statistics-card statistics-card-four" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
-            <div class="container-icon">
-              <img src="assets/img/vector-svg4.svg" alt="">
-            </div>
-            <div>
-              <h3 class="percent">175</h3>
-              <p>هيئة التدريس</p>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg2.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">3.5K</h3>
+                <p>إحصائيات الطلاب</p>
+              </div>
             </div>
           </div>
-          <div class="statistics-card statistics-card-five" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250">
-            <div class="container-icon">
-              <img src="assets/img/vector-svg5.svg" alt="">
-            </div>
-            <div >
-              <h3 class="percent">%95</h3>
-              <p>التخرج والتوظيف</p>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg3.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">200</h3>
+                <p>المؤسسات التعليمية</p>
+              </div>
             </div>
           </div>
-          <div class="statistics-card statistics-card-six" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
-            <div class="container-icon">
-              <img src="assets/img/vector-svg6.svg" alt="">
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg4.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">175</h3>
+                <p>هيئة التدريس</p>
+              </div>
             </div>
-            <div >
-              <h3 class="percent">80%</h3>
-              <p>التدريس</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg6.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">80%</h3>
+                <p>المرافق التعليمية</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg5.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">%95</h3>
+                <p>التخرج والتوظيف</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      
+        <div class="d-flex align-items-center tab-pane fade  row justify-content-center" id="ex2-tabs-3" role="tabpanel"
+          aria-labelledby="ex2-tab-3">
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg1.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">2024/2025</h3>
+                <p>سنة بداية التعليم</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg2.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">3.5K</h3>
+                <p>إحصائيات الطلاب</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg3.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">200</h3>
+                <p>المؤسسات التعليمية</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg4.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">175</h3>
+                <p>هيئة التدريس</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg6.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">80%</h3>
+                <p>المرافق التعليمية</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-stretch">
+            <div class="card-item" data-aos="flip-left" data-aos-duration="1500">
+              <div class="container-icon">
+                <img src="assets/img/vector-svg5.svg" alt="">
+              </div>
+              <div class="w-100 h-100 d-flex align-items-center justify-content-center flex-column">
+                <h3 class="percent">%95</h3>
+                <p>التخرج والتوظيف</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </section>
@@ -746,277 +1361,261 @@
   <div class="news-bg">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-2">
-          <div class="main-heading">
-            <h2 class="title" data-aos="fade-down-left" data-aos-duration="950">
-              أخبار الهيئةالملكيـة بالجبيـل وينبـع
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-            <!-- Tabs navs -->
-          <ul class="nav nav-tabs news-nav-tabs border-0" id="ex1" role="tablist">
-                        <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1000">
-                          <a data-mdb-tab-init class="nav-link border-0 active" id="ex1-tab-1-1" href="#ex1-tabs-1-1" role="tab"
-                            aria-controls="ex1-tabs-1-1" aria-selected="true">
-                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M11 16.7494L16.3348 19.8186C17.3118 20.3811 18.5073 19.5496 18.2502 18.498L16.8362 12.7264L21.554 8.83784C22.4153 8.12861 21.9525 6.78352 20.8212 6.69792L14.6123 6.19657L12.1827 0.742855C11.7456 -0.247618 10.2544 -0.247618 9.81734 0.742855L7.38773 6.18435L1.17875 6.6857C0.047509 6.77129 -0.415273 8.11638 0.446015 8.82561L5.16381 12.7141L3.74976 18.4858C3.49266 19.5374 4.68818 20.3689 5.66516 19.8064L11 16.7494Z"
-                                fill="white" />
-                            </svg>
-                            مميزة
-                          </a>
-                        </li>
-                        <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1300">
-                          <a data-mdb-tab-init class="nav-link" id="ex1-tab-1-2" href="#ex1-tabs-1-2" role="tab"
-                            aria-controls="ex1-tabs-1-2" aria-selected="false">
-                            <svg class="last-news" width="25" height="24" viewBox="0 0 25 24" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M15.1337 22.612H10.7005C6.52102 22.612 4.43075 22.612 3.13292 21.3131C1.83509 20.0141 1.83398 17.925 1.83398 13.7455V11.5289C1.83398 7.3495 1.83398 5.25923 3.13292 3.9614C4.43186 2.66357 6.52102 2.66246 10.7005 2.66246H15.1337C19.3131 2.66246 21.4034 2.66246 22.7012 3.9614C23.999 5.26034 24.0002 7.3495 24.0002 11.5289V13.7455C24.0002 17.925 24.0001 20.0152 22.7012 21.3131C21.9775 22.0379 21.0077 22.3582 19.5669 22.499M7.37553 2.66246V1M18.4586 2.66246V1M23.446 8.204H11.5317M1.83398 8.204H6.12868"
-                                stroke="#333333" stroke-width="2" stroke-linecap="round" />
-                              <path
-                                d="M18.8165 17.0704C18.8165 17.1654 18.7788 17.2565 18.7116 17.3237C18.6444 17.3909 18.5533 17.4287 18.4582 17.4287C18.3632 17.4287 18.2721 17.3909 18.2049 17.3237C18.1377 17.2565 18.0999 17.1654 18.0999 17.0704C18.0999 16.9753 18.1377 16.8842 18.2049 16.817C18.2721 16.7498 18.3632 16.712 18.4582 16.712C18.5533 16.712 18.6444 16.7498 18.7116 16.817C18.7788 16.8842 18.8165 16.9753 18.8165 17.0704ZM18.8165 12.6371C18.8165 12.7321 18.7788 12.8233 18.7116 12.8905C18.6444 12.9577 18.5533 12.9954 18.4582 12.9954C18.3632 12.9954 18.2721 12.9577 18.2049 12.8905C18.1377 12.8233 18.0999 12.7321 18.0999 12.6371C18.0999 12.5421 18.1377 12.451 18.2049 12.3838C18.2721 12.3166 18.3632 12.2788 18.4582 12.2788C18.5533 12.2788 18.6444 12.3166 18.7116 12.3838C18.7788 12.451 18.8165 12.5421 18.8165 12.6371ZM13.275 17.0704C13.275 17.1654 13.2373 17.2565 13.1701 17.3237C13.1029 17.3909 13.0117 17.4287 12.9167 17.4287C12.8217 17.4287 12.7305 17.3909 12.6633 17.3237C12.5961 17.2565 12.5584 17.1654 12.5584 17.0704C12.5584 16.9753 12.5961 16.8842 12.6633 16.817C12.7305 16.7498 12.8217 16.712 12.9167 16.712C13.0117 16.712 13.1029 16.7498 13.1701 16.817C13.2373 16.8842 13.275 16.9753 13.275 17.0704ZM13.275 12.6371C13.275 12.7321 13.2373 12.8233 13.1701 12.8905C13.1029 12.9577 13.0117 12.9954 12.9167 12.9954C12.8217 12.9954 12.7305 12.9577 12.6633 12.8905C12.5961 12.8233 12.5584 12.7321 12.5584 12.6371C12.5584 12.5421 12.5961 12.451 12.6633 12.3838C12.7305 12.3166 12.8217 12.2788 12.9167 12.2788C13.0117 12.2788 13.1029 12.3166 13.1701 12.3838C13.2373 12.451 13.275 12.5421 13.275 12.6371ZM7.73346 17.0704C7.73346 17.1654 7.69571 17.2565 7.62852 17.3237C7.56132 17.3909 7.47018 17.4287 7.37515 17.4287C7.28012 17.4287 7.18899 17.3909 7.12179 17.3237C7.0546 17.2565 7.01685 17.1654 7.01685 17.0704C7.01685 16.9753 7.0546 16.8842 7.12179 16.817C7.18899 16.7498 7.28012 16.712 7.37515 16.712C7.47018 16.712 7.56132 16.7498 7.62852 16.817C7.69571 16.8842 7.73346 16.9753 7.73346 17.0704ZM7.73346 12.6371C7.73346 12.7321 7.69571 12.8233 7.62852 12.8905C7.56132 12.9577 7.47018 12.9954 7.37515 12.9954C7.28013 12.9954 7.18899 12.9577 7.12179 12.8905C7.0546 12.8233 7.01685 12.7321 7.01685 12.6371C7.01685 12.5421 7.0546 12.451 7.12179 12.3838C7.18899 12.3166 7.28013 12.2788 7.37515 12.2788C7.47018 12.2788 7.56132 12.3166 7.62852 12.3838C7.69571 12.451 7.73346 12.5421 7.73346 12.6371Z"
-                                fill="#333333" stroke="#333333" stroke-width="1.5" />
-                            </svg>
-                            احدث الاخبار
-                          </a>
-                        </li>
-          
-          </ul>
-            <!-- Tabs navs -->
-        </div>
-      </div>
-      <div class="row">
         <div class="col-12">
-          <!-- <div class="mt-5"> -->
-            <!-- Tabs content -->
-            <div class="tab-content" id="ex1-content">
-              <div class="row d-flex align-items-center tab-pane fade show active" id="ex1-tabs-1-1" role="tabpanel" aria-labelledby="ex1-tab-1-1">
-                <div class="col-lg-5">
-                  <div class="section-title-banner me-5 mt-5 pt-3">
-                    <div class="sec-after-before-banner">
-                      <!-- <div class="border-after-before"> -->
-                      <div data-aos="fade-down-left" data-aos-duration="1000">
-                        <h3>
-                          تعرف على جديد الأخبار
-                        </h3>
-                        <!-- </div> -->
-                      </div>
-                    </div>
+            <div class="section-title">
+              <div class="sec-after-before">
+                  <div data-aos="fade-down-left" data-aos-duration="1000">
+                    <h3>
+                      الأخبار
+                    </h3>
                   </div>
-                  <p class="desc">هنالـك العديـد من الأنواع المتوفرة لايبسـوم
-                    هنالـك العديـد من الأنواع المتوفرة لايبسـوم</p>
-                  <a href="#" class="secondary-btn d-none d-lg-block" data-aos="zoom-in-up" data-aos-duration="1500">
-                    المزيد من الاخبار
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-                <div class="col-lg-7">
-                  <div>
-                    <div id="mySwiper" class="swiper mySwiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-        
-        
-                      </div>
-                      <div class="swiper-pagination"></div>
-                    </div>
-                  </div>               
-                  <a href="#" class="secondary-btn d-block d-lg-none mx-auto" data-aos="zoom-in-up" data-aos-duration="1500">
-                    المزيد من الاخبار
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="row d-flex align-items-center tab-pane fade" id="ex1-tabs-1-2" role="tabpanel" aria-labelledby="ex1-tab-1-2">
-                <div class="col-lg-5">
-                  <div class="section-title-banner me-5 mt-5 pt-3">
-                    <div class="sec-after-before-banner">
-                      <!-- <div class="border-after-before"> -->
-                      <div data-aos="fade-down-left" data-aos-duration="1000">
-                        <h3>
-                          2تعرف على جديد الأخبار
-                        </h3>
-                        <!-- </div> -->
-                      </div>
-                    </div>
-                  </div>
-                  <p class="desc">هنالـك العديـد من الأنواع المتوفرة لايبسـوم
-                    هنالـك العديـد من الأنواع  </p>
-                  <a href="#" class="secondary-btn d-none d-lg-block" data-aos="zoom-in-up" data-aos-duration="1500">
-                    المزيد من الاخبار
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
-                <div class="col-lg-7">
-                  <div>
-                    <div id="mySwiper" class="swiper mySwiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم2</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم2</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="box-swiper">
-                            <div class="card-box">
-                              <div class="img-card">
-                                <img src="assets/img/news-img1.png" alt="">
-                              </div>
-                              <div class="content">
-                                <div class="d-flex justify-content-center align-items-end">
-                                  <div class="img-box">
-                                    <img src="assets/img/solid-star.png" alt="">
-                                  </div>
-                                  <h3>لوريم إيبسوم</h3>
-                                </div>
-                                <p>لوريم إيبسوم لوريم إيبسوم</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-pagination"></div>
-                    </div>
-                  </div>
-                  <a href="#" class="secondary-btn d-block d-lg-none mx-auto" data-aos="zoom-in-up" data-aos-duration="1500">
-                    المزيد من الاخبار
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
               </div>
             </div>
-            <!-- Tabs content -->
-          <!-- </div> -->
         </div>
-        
+      </div>
+      <div class="news-wrapper-navs">
+        <div class="navs-news">
+          <ul class="nav nav-tabs border-0" id="ex3" role="tablist">
+            <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1000">
+              <a data-mdb-tab-init class="nav-link border-0 active" id="ex3-tab-1" href="#ex3-tabs-1" role="tab"
+                aria-controls="ex3-tabs-1" aria-selected="true">
+                <!-- <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 16.7494L16.3348 19.8186C17.3118 20.3811 18.5073 19.5496 18.2502 18.498L16.8362 12.7264L21.554 8.83784C22.4153 8.12861 21.9525 6.78352 20.8212 6.69792L14.6123 6.19657L12.1827 0.742855C11.7456 -0.247618 10.2544 -0.247618 9.81734 0.742855L7.38773 6.18435L1.17875 6.6857C0.047509 6.77129 -0.415273 8.11638 0.446015 8.82561L5.16381 12.7141L3.74976 18.4858C3.49266 19.5374 4.68818 20.3689 5.66516 19.8064L11 16.7494Z"
+                    fill="white" />
+                </svg> -->
+                <!-- <i class="far fa-star"></i> -->
+                <i class="fas fa-star"></i>
+                مميزة
+              </a>
+            </li>
+            <li class="nav-item" role="presentation" data-aos="fade-down" data-aos-duration="1500">
+              <a data-mdb-tab-init class="nav-link border-0" id="ex3-tab-2" href="#ex3-tabs-2" role="tab"
+                aria-controls="ex3-tabs-2" aria-selected="false">
+                <!-- <svg class="last-news" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.1337 22.612H10.7005C6.52102 22.612 4.43075 22.612 3.13292 21.3131C1.83509 20.0141 1.83398 17.925 1.83398 13.7455V11.5289C1.83398 7.3495 1.83398 5.25923 3.13292 3.9614C4.43186 2.66357 6.52102 2.66246 10.7005 2.66246H15.1337C19.3131 2.66246 21.4034 2.66246 22.7012 3.9614C23.999 5.26034 24.0002 7.3495 24.0002 11.5289V13.7455C24.0002 17.925 24.0001 20.0152 22.7012 21.3131C21.9775 22.0379 21.0077 22.3582 19.5669 22.499M7.37553 2.66246V1M18.4586 2.66246V1M23.446 8.204H11.5317M1.83398 8.204H6.12868"
+                    stroke="#A9A9A9" stroke-width="2" stroke-linecap="round" />
+                  <path
+                    d="M18.8165 17.0704C18.8165 17.1654 18.7788 17.2565 18.7116 17.3237C18.6444 17.3909 18.5533 17.4287 18.4582 17.4287C18.3632 17.4287 18.2721 17.3909 18.2049 17.3237C18.1377 17.2565 18.0999 17.1654 18.0999 17.0704C18.0999 16.9753 18.1377 16.8842 18.2049 16.817C18.2721 16.7498 18.3632 16.712 18.4582 16.712C18.5533 16.712 18.6444 16.7498 18.7116 16.817C18.7788 16.8842 18.8165 16.9753 18.8165 17.0704ZM18.8165 12.6371C18.8165 12.7321 18.7788 12.8233 18.7116 12.8905C18.6444 12.9577 18.5533 12.9954 18.4582 12.9954C18.3632 12.9954 18.2721 12.9577 18.2049 12.8905C18.1377 12.8233 18.0999 12.7321 18.0999 12.6371C18.0999 12.5421 18.1377 12.451 18.2049 12.3838C18.2721 12.3166 18.3632 12.2788 18.4582 12.2788C18.5533 12.2788 18.6444 12.3166 18.7116 12.3838C18.7788 12.451 18.8165 12.5421 18.8165 12.6371ZM13.275 17.0704C13.275 17.1654 13.2373 17.2565 13.1701 17.3237C13.1029 17.3909 13.0117 17.4287 12.9167 17.4287C12.8217 17.4287 12.7305 17.3909 12.6633 17.3237C12.5961 17.2565 12.5584 17.1654 12.5584 17.0704C12.5584 16.9753 12.5961 16.8842 12.6633 16.817C12.7305 16.7498 12.8217 16.712 12.9167 16.712C13.0117 16.712 13.1029 16.7498 13.1701 16.817C13.2373 16.8842 13.275 16.9753 13.275 17.0704ZM13.275 12.6371C13.275 12.7321 13.2373 12.8233 13.1701 12.8905C13.1029 12.9577 13.0117 12.9954 12.9167 12.9954C12.8217 12.9954 12.7305 12.9577 12.6633 12.8905C12.5961 12.8233 12.5584 12.7321 12.5584 12.6371C12.5584 12.5421 12.5961 12.451 12.6633 12.3838C12.7305 12.3166 12.8217 12.2788 12.9167 12.2788C13.0117 12.2788 13.1029 12.3166 13.1701 12.3838C13.2373 12.451 13.275 12.5421 13.275 12.6371ZM7.73346 17.0704C7.73346 17.1654 7.69571 17.2565 7.62852 17.3237C7.56132 17.3909 7.47018 17.4287 7.37515 17.4287C7.28012 17.4287 7.18899 17.3909 7.12179 17.3237C7.0546 17.2565 7.01685 17.1654 7.01685 17.0704C7.01685 16.9753 7.0546 16.8842 7.12179 16.817C7.18899 16.7498 7.28012 16.712 7.37515 16.712C7.47018 16.712 7.56132 16.7498 7.62852 16.817C7.69571 16.8842 7.73346 16.9753 7.73346 17.0704ZM7.73346 12.6371C7.73346 12.7321 7.69571 12.8233 7.62852 12.8905C7.56132 12.9577 7.47018 12.9954 7.37515 12.9954C7.28013 12.9954 7.18899 12.9577 7.12179 12.8905C7.0546 12.8233 7.01685 12.7321 7.01685 12.6371C7.01685 12.5421 7.0546 12.451 7.12179 12.3838C7.18899 12.3166 7.28013 12.2788 7.37515 12.2788C7.47018 12.2788 7.56132 12.3166 7.62852 12.3838C7.69571 12.451 7.73346 12.5421 7.73346 12.6371Z"
+                    fill="#A9A9A9" stroke="#A9A9A9" stroke-width="1.5" />
+              </svg> -->
+              <i class="far fa-newspaper"></i>
+              احدث الاخبار
+              </a>
+            </li>
+            
+          </ul>
+            <a href="#" class="more">المزيد من الأخبار</a>
+        </div>
+      </div>
+      <div class="news-wrapper-content">
+        <div class="tab-content" id="ex3-content">
+          <div class="d-flex align-items-center tab-pane fade show active " id="ex3-tabs-1" role="tabpanel"
+            aria-labelledby="ex3-tab-1">
+              <div id="mySwiper" class="">
+                <div class="swiper-wrapper swiper-wrapper-news">
+                  <div class="swiper-slide">
+                    <a href="" class="box-swiper">
+                      <div class="card-box">
+                        <div class="img-card">
+                          <img src="assets/img/news-img1.png" alt="">
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/img/solid-star.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h3>News Education Education Education</h3>
+                          <p>لوريم إيبسوم لوريم إيبسوم</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="box-swiper">
+                      <div class="card-box">
+                        <div class="img-card">
+                          <img src="assets/img/news-img1.png" alt="">
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/img/solid-star.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h3>News Education Education Education</h3>
+                          <p>لوريم إيبسوم لوريم إيبسوم</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="box-swiper">
+                      <div class="card-box">
+                        <div class="img-card">
+                          <img src="assets/img/news-img1.png" alt="">
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/img/solid-star.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h3>News Education Education Education</h3>
+                          <p>لوريم إيبسوم لوريم إيبسوم</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="" class="box-swiper">
+                      <div class="card-box">
+                        <div class="img-card">
+                          <img src="assets/img/news-img1.png" alt="">
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/img/solid-star.png" alt="">
+                        </div>
+                        <div class="content">
+                          <h3>News Education Education Education</h3>
+                          <p>لوريم إيبسوم لوريم إيبسوم</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              
+          </div>
+         
+          <div class="d-flex align-items-center tab-pane fade" id="ex3-tabs-2" role="tabpanel"
+                aria-labelledby="ex3-tab-2">
+            <div id="mySwiperLastNews" class="">
+              <div class="swiper-wrapper swiper-wrapper-lastNews">
+                <div class="swiper-slide">
+                  <a href="" class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                          <div class="img-box">
+                            <img src="assets/img/solid-star.png" alt="">
+                          </div>
+                          <h3>News Education</h3>
+                          <!-- <h3>لوريم إيبسوم</h3> -->
+                        </div>
+                        <p>لوريم لوريم لوريم لوريم إيبسوم إيبسوم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                          <div class="img-box">
+                            <img src="assets/img/solid-star.png" alt="">
+                          </div>
+                          <h3>News Education</h3>
+                          <!-- <h3>لوريم إيبسوم</h3> -->
+                        </div>
+                        <p>لوريم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                          <div class="img-box">
+                            <img src="assets/img/solid-star.png" alt="">
+                          </div>
+                          <h3>News Education</h3>
+                          <!-- <h3>لوريم إيبسوم</h3> -->
+                        </div>
+                        <p>لوريم إيبسوم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                          <div class="img-box">
+                            <img src="assets/img/solid-star.png" alt="">
+                          </div>
+                          <h3>لوريم إيبسوم</h3>
+                        </div>
+                        <p>لوريم إيبسوم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                  
+                <div class="swiper-slide">
+                  <a href="" class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                          <div class="img-box">
+                            <img src="assets/img/solid-star.png" alt="">
+                          </div>
+                          <h3>لوريم إيبسوم</h3>
+                        </div>
+                        <p>لوريم إيبسوم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="" class="box-swiper">
+                    <div class="card-box">
+                      <div class="img-card">
+                        <img src="assets/img/news-img1.png" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex justify-content-center align-items-end">
+                          <div class="img-box">
+                            <img src="assets/img/solid-star.png" alt="">
+                          </div>
+                          <h3>لوريم إيبسوم</h3>
+                        </div>
+                        <p>لوريم إيبسوم لوريم إيبسوم</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
   <!-- ======= End Our News Section ======= -->
 
@@ -1025,23 +1624,42 @@
 <div class="container">
 <div class="row">
   <div class="d-flex align-items-center justify-content-center flex-column flex-md-row">
-    <div class="section-title">
-      <div class="sec-after-before">
-        <div class="border-after-before">
+
+    <div class="section-title-eval">
+      <div class="sec-after-before-eval">
           <div data-aos="fade-up-left" data-aos-duration="1000">
-            <h3 class="text-white">نحن نعمل بجد </h3>
-            <h3 class="text-white">نظرة على إحصائياتنـــا</h3>
+            <h3 class="text-white">سعداء بوجودك</h3>
+            <h3 class="text-white">وسنسعد أكثر بتقييمك..</h3>
           </div>
-        </div>
       </div>
     </div>
     <div class="evaluation-btns">
       <div class="btn-box">
-        <button type="button" class="btn-ev"  data-aos="zoom-in-down" data-aos-duration="1000">1</button>
-        <button type="button" class="btn-ev" data-aos="zoom-in-down" data-aos-duration="1300">2</button>
-        <button type="button" class="btn-ev" data-aos="zoom-in-down" data-aos-duration="1500">3</button>
-        <button type="button" class="btn-ev" data-aos="zoom-in-down" data-aos-duration="1700">4</button>
-        <button type="button" class="btn-ev active" data-aos="zoom-in-down" data-aos-duration="2000">5</button>
+        <button type="button" class="btn-ev"  data-aos="zoom-in-down" data-aos-duration="1000">
+          <svg width="52" height="49" viewBox="0 0 52 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0076 48.8574L25.8397 39.3411L41.6436 48.8574L37.5085 30.8728L51.4431 18.7508L33.0619 17.1365L25.8397 0.143066L18.6176 17.1365L0.236378 18.7508L14.171 30.8445L10.0076 48.8574Z"/>
+          </svg>
+        </button>
+        <button type="button" class="btn-ev" data-aos="zoom-in-down" data-aos-duration="1300">
+          <svg width="52" height="49" viewBox="0 0 52 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0076 48.8574L25.8397 39.3411L41.6436 48.8574L37.5085 30.8728L51.4431 18.7508L33.0619 17.1365L25.8397 0.143066L18.6176 17.1365L0.236378 18.7508L14.171 30.8445L10.0076 48.8574Z"/>
+          </svg>
+        </button>
+        <button type="button" class="btn-ev" data-aos="zoom-in-down" data-aos-duration="1500">
+          <svg width="52" height="49" viewBox="0 0 52 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0076 48.8574L25.8397 39.3411L41.6436 48.8574L37.5085 30.8728L51.4431 18.7508L33.0619 17.1365L25.8397 0.143066L18.6176 17.1365L0.236378 18.7508L14.171 30.8445L10.0076 48.8574Z"/>
+          </svg>
+        </button>
+        <button type="button" class="btn-ev" data-aos="zoom-in-down" data-aos-duration="1700">
+          <svg width="52" height="49" viewBox="0 0 52 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0076 48.8574L25.8397 39.3411L41.6436 48.8574L37.5085 30.8728L51.4431 18.7508L33.0619 17.1365L25.8397 0.143066L18.6176 17.1365L0.236378 18.7508L14.171 30.8445L10.0076 48.8574Z"/>
+          </svg>
+        </button>
+        <button type="button" class="btn-ev active" data-aos="zoom-in-down" data-aos-duration="2000">
+          <svg width="52" height="49" viewBox="0 0 52 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0076 48.8574L25.8397 39.3411L41.6436 48.8574L37.5085 30.8728L51.4431 18.7508L33.0619 17.1365L25.8397 0.143066L18.6176 17.1365L0.236378 18.7508L14.171 30.8445L10.0076 48.8574Z"/>
+          </svg>
+        </button>
       </div>
       
     </div>
@@ -1049,8 +1667,8 @@
 </div>
 </div>
 </section>
-
   <!-- ======= End Our Evaluation Section ======= -->
+
 
   <!-- ======= Start Footer Section ======= -->
 <footer class="footer">
@@ -1062,9 +1680,11 @@
           <div class="row">
             <div class="footer-right-side col-12">
               <div class="row">
-                <div class="col-12 d-flex flex-column flex-md-row">
+                <div class="col-12 d-flex flex-column flex-lg-row">
                   <div class="first-box">
-                      <img src="assets/img/logo-img.png" alt="">
+                      <a href="#">
+                        <img src="assets/img/logo-img.png" alt="">
+                      </a>
                       <p>
                         هنالك العديد من الأنواع المتوفرة لنصوص لوريـــم لوريــم 
                         ولكـــن الغالبيـــة تـــم تعديلهـا بشكــل مـــا عبــر إدخــال 
@@ -1080,15 +1700,16 @@
                         <a href="#">الأسئلة الشائعة:</a>
                       </li>
                       <li class=" item-bold">
-                        <a href="#">النشرة البريدية:</a>
+                        <a href="#">روابط مهمة:</a>
                       </li>
+                      <!-- <li class=" item-bold">
+                        <a href="#">النشرة البريدية:</a>
+                      </li> -->
                     </ul>
                   </div>
                   <div class="sec-box">
                     <ul>
-                      <li class=" item-bold">
-                        <a href="#">روابط مهمة:</a>
-                      </li>
+                     
                       <li class=" item-bold">
                         <a href="#">البيانات المفتوحة:</a>
                       </li>
@@ -1141,17 +1762,6 @@
                  
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col-12">
-                  <div class="col-lg-4">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                      <button class="btn subscribe-now" type="button" id="button-addon1">إشترك الآن</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class="row d-none d-lg-block">
@@ -1176,9 +1786,43 @@
               </div>
               <div>
                 <div class="social-icons">
-                  <a href="#" class="socila-media">
-                    التواصل الاجتماعي
-                  </a>
+                  <h4 class="socila-media">التواصل الاجتماعي:</h4>
+                  <p class="socila-media-jubail">
+                    بالجبيل
+                  </p>
+                    <ul class="icons">
+                      <li class="item">
+                        <a href="#">
+                          <img src="assets/img/in.png" alt="" srcset="">
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#">
+                          <img src="assets/img/youtube.png" alt="" srcset="">
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#">
+                          <img src="assets/img/insta.png" alt="" srcset="">
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#">
+                          <img src="assets/img/twitter.png" alt="" srcset="">
+                        </a>
+                      </li>
+                      <li class="item">
+                        <a href="#">
+                          <img src="assets/img/facebook.png" alt="" srcset="">
+                        </a>
+                      </li>
+                    
+                    </ul>
+                </div>
+                <div class="social-icons">
+                  <p class="socila-media-janboo">
+                      بينبع
+                  </p>
                     <ul class="icons">
                       <li class="item">
                         <a href="#">
@@ -1235,16 +1879,18 @@
   <!-- ======= Scroll-to-top Section ======= -->
   <!-- ======= Scroll-to-top Section ======= -->
 
-
     <!--JS Files -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/mdb.umd.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/all.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <!-- jfontsize -->
-    <script src="assets/js/jquery.min.js"></script> 
-      <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <script src="assets/js/jquery.jfontsize-1.0.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <script>
   AOS.init({
@@ -1252,10 +1898,16 @@
     // mirror: false,
     // anchorPlacement: 'top-bottom',
   })
+  $('p').jfontsize({
+      btnMinusClasseId: '#jfontsize-m2',
+      btnDefaultClasseId: '#jfontsize-d2',
+      btnPlusClasseId: '#jfontsize-p2',
+  btnMinusMaxHits: 3,
+  btnPlusMaxHits: 3,
+  sizeChange: 1
+  });
     </script>
+
 
 </body>
 </html>
-
-
-

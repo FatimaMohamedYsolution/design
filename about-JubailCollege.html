@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RCJY</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- CSS Files -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon-logo.svg">
+  <link rel="stylesheet" href="assets/css/mdb.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link href="assets/css/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main-rtl.css">
+
+</head>
+
+<body class="jubail-theme">
+
+
+<!-- ======= Start Calender ======= -->
+<section class="calendar-sec calendar-sec-one  d-flex flex-row-reverce">
+  <div class="collapse collapse-horizontal calendar-content" id="collapseWidthExample" >
+    <div class="card card-body card-box-one">
+      <div class="d-flex justify-content-center">
+        <div class="calendar-info">
+          <h3>المؤتمر الدولي السادس لمدن التعلم</h3>
+          <div class="wrapper-date-content">
+             <div class="calendar-date d-flex flex-column">
+                <span class="day-name">الأحد</span>
+                <span class="d-flex flex-column day-month">
+                  <span class="day">22</span>
+                  <span class="month">سبتمبر</span>
+                </span>
+                <span class="specific-date">22/09/2024</span>
+              </div>
+          </div>
+          <div class="date-bottom">
+            <p>
+              <span>التاريخ الهجري: </span>
+             <span> 19/03/1446</span>
+              </p>
+          </div>
+          <a href="#" class="more-calender-link">
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+            <span>المزيد</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+   <button
+     class="calendar-btn"
+     type="button"
+     data-mdb-collapse-init
+     data-mdb-ripple-init
+     data-mdb-target="#collapseWidthExample"
+     aria-expanded="false"
+     aria-controls="collapseWidthExample">
+    <img src="assets/img/global-calender.svg" alt="">
+     التقويم
+   </button>
+</section>
+<!-- ======= End Calender ======= -->
+<!-- ======= Start start version ======= -->
+<div class="start-version">
+<h3>نسخة تجريبية</h3>
+</div>
+<!-- ======= End start version ======= -->
+
+<!-- ======= Start chatbot ======= -->
+<a class="open-chat-inner" onclick="openDialogue('chat-popup', '-480px')">
+  <div class="icon-box">
+      <img src="assets/img/chat-icon.svg" alt="" srcset="">
+  </div>
+</a>
+
+
+<div class="chat-popup-inner" id="chat-popup">
+  <div class="chat_header">
+    <div class="title">
+      <figure>
+        <img src="assets/img/chat-icon.svg" alt="" srcset="">
+      </figure>
+      <!-- <i class="fa-solid fa-phone"></i> -->
+      <span class="i18n" data-message="CallbackTitle">المساعد الذكي</span>
+  </div>
+  <div class="close">
+    <figure onclick="minimizeDialogue('chat-popup', '-426px')">
+      <img id="minimize-chat-popup" src="assets/img/minus__icon.png" alt="">
+      <img id="maximize-chat-popup" src="assets/img/maximise__icon.png" alt="">
+    </figure>
+    <figure onclick="hideDialougue('chat-popup', '-480px')">
+      <img src="assets/img/close__icon.png" alt="">
+    </figure>
+    </div>
+  </div>
+  <div class="chat-container">
+    <div class="chat_converse" id="chatBotDiv">
+      <div class="chat_msg chat_msg_admin">
+        <div class="chat_avatar">
+          <img alt="Chat Bot" src="assets/img/get-help.png">
+        </div>
+        <p class="text welcom">مرحبا بك</p>
+        <ul>
+          <li><a href="">التمويل الشخصي</a></li>
+          <li><a href="">التمويل العقاري</a></li>
+          <li><a href="">أسعار المنتجات </a></li>
+        </ul>
+      </div>
+      <div class="chat_msg chat_msg_user" style="margin-top: 20px;">
+        <div class="user_avatar">
+          <img src="assets/img/profile.png" alt="">
+        </div>
+          <div class="user_message">
+              السلام عليكم
+          </div>
+          <!-- <div class="loading-bubble blue a-message other" style="margin-top: 20px;">
+            <a>
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </a>
+          </div> -->
+      </div>
+
+      <div class="loading-bubble grey">
+        <a>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </a>
+      </div>
+
+      <div class="chat_msg chat_msg_admin" style="margin-top: 20px;">
+            <p class="text">يشترط الحصول على الجنسية السعودية للحصول على قرض في التمويل العقاري</p>
+            <a href="" class="btn btn-chat">
+                القائمة الرئيسية
+                <i class="fas fa-link"></i>
+            </a>
+            <ul class="chat__list ps-5">
+              <li><span>الحساب</span></li>
+              <li><span>التمويل</span></li>
+              <li><span>التمويل</span></li>
+            </ul>
+      </div> 
+    </div>
+    <div class="fab_field">
+      <button id="send_msg_icon" class="send_msg_icon">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+      <input type="text" id="chat_message" name="chat_message" placeholder="أكتب الرسالة" class="chat_text"
+        onkeydown="search(this)">
+    </div>
+
+  </div>
+
+</div>
+<!-- ======= End chatbot ======= -->
+
+
+
+
+  <!-- ======= Start Header ======= -->
+  <header class="heading fixed-top p-0">
+    <div class="top-heading">
+      <div class="right-sec">
+        <a href="#" class="logo-heading">
+          <img src="assets/img/asd.png" alt="">
+        </a>
+        <h3 class="heading-title">تعليم الهيئة الملكية للجبيل وينبع</h3>
+      </div>
+      <div class="left-sec d-flex flex-column gap-1">
+          <div class="top-links">
+            <div class="dropdown">
+              <button class="dropdown-toggle btn-educate" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                قطاعات التعليم
+                <i class="fas fa-sort-down"></i>
+              </button>
+              <ul class="dropdown-menu custom-drob">
+                <li class="li-custom">
+                  <a class="dropdown-item" href="#">
+                    <img src="assets/img/book-icon.svg" alt="">
+                  التعليم بالجبيل الصناعية
+                  </a>
+                  <div class="sub-menu">
+                    <ul class="top-sec">
+                      <li class="col-4"><a href="#">الروضات</a></li>
+                      <li class="col-4"><a href="#">المدارس</a></li>
+                    </ul>
+                    <div class="bottom-sec">
+                        <ul class="row">
+                          <li class="col-lg-4">
+                            <a href="#">كليةالجبيل الصناعية</a>
+                          </li>
+                          <li class="col-lg-4">
+                            <a href="#">معهد الجبيل التقني</a>
+                          </li>
+                          <li class="col-lg-4">
+                          <a href="#">معهد اللغة الانجليزية والسنة التحضيرية</a>
+                          </li>
+                          <li class="col-lg-4">
+                           <a href="#">إدارة التعليم العام</a>
+                          </li>
+                          <li class="col-lg-4">
+                          <a href="#">وكالة التخطيط والجودة</a>
+                          </li>
+                          <li class="col-lg-4">
+                            <a href="#">وكالة البحوث والتنمية الصناعية</a>
+                          </li>
+                          <li class="col-lg-4">
+                           <a href="#">وكالة شؤون الطلاب</a>
+                          </li>
+                          <li class="col-lg-4">
+                            <a href="#">إدارة خدمات التعليم</a>
+                          </li>
+                          <li class="col-lg-4">
+                            <a href="#">قسم العلاقات الصناعية وخدمات المجتمع</a>
+                          </li>
+                        </ul>
+                      
+                    </div>
+                  </div>
+                </li>
+                <li><a class="dropdown-item" href="#">
+                  <img src="assets/img/book-icon-green.svg" alt="">
+                  التعليم بينبع الصناعية
+                </a>
+              </li>
+              </ul>
+              
+            </div>
+            <div class="serv-link">
+              <a href="#">الخدمات الالكترونيـة</a>
+            </div>
+            <div class="search-icon">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-search btn-icon"></i>
+              </button>
+            </div>
+            <div class="globel-icon">
+              <img src="assets/img/earth.svg" alt="">
+            </div>
+          </div>
+          <div class="bottom-links">
+            <div class="teaching-staff">
+              <a href="#">هيئة التدريس</a>
+            </div>
+            <div class="teaching-staff">
+              <a href="#">الطلاب </a>
+            </div>
+            <div class="teaching-staff">
+              <a href="#">الخريجين</a>
+            </div>
+            <div class="teaching-staff">
+              <a href="#">خدمات المجتمع</a>
+            </div>
+          </div>
+      </div>
+      </div>
+  
+    <div class="bottom-heading ">
+      <div class="row">
+        <div class="">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <!-- <a class="mx-0 navbar-brand" href="#">
+                <img src="assets/img/logo-img.png" alt="">
+              </a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <span class="nav-link">عن التعليم</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <ul class="main-dropdown">
+                      <li class="list-item">
+                        <a class="link-item" href="#">عن التعليم1</a>
+                      </li>
+                      <li class="list-item">
+                        <a class="link-item" href="#">
+                          <span>عن التعليم2 </span>
+                          <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </a>
+                          <!--  -->
+                          <ul class="first-child-dropdown">
+                            <li class="list-item">
+                              <a class="link-item" href="#">عن التعليم1</a>
+                            </li>
+                            <li class="list-item ">
+                              <a class="link-item" href="#">عن التعليم2</a>
+                            </li>
+                            <li class="list-item-submenu">
+                              <a class="link-item" href="#">
+                                <span>عن التعليم3 </span>
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                              </a>
+                              <ul class="second-child-dropdown">
+                                <li class="list-item">
+                                  <a class="link-item" href="#">عن التعليم11</a>
+                                </li>
+                                <li class="list-item">
+                                  <a class="link-item" href="#">عن التعليم32</a>
+                                </li>
+                               
+                              </ul>
+                            </li>
+                          </ul>
+                          <!--  -->
+                      </li>
+                      <li class="list-item">
+                        <a class="link-item" href="#">
+                          <span>عن التعليم3 </span>
+                          <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </a>
+                        <!--  -->
+                        <ul class="first-child-dropdown">
+                          <li class="list-item">
+                            <a class="link-item" href="#">عن التعليم1</a>
+                          </li>
+                          <li class="list-item ">
+                            <a class="link-item" href="#">عن التعليم2</a>
+                          </li>
+                          <li class="list-item-submenu">
+                            <a class="link-item" href="#">
+                              <span>عن التعليم3 </span>
+                              <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                            <ul class="second-child-dropdown">
+                              <li class="list-item">
+                                <a class="link-item" href="#">عن التعليم11</a>
+                              </li>
+                              <li class="list-item">
+                                <a class="link-item" href="#">عن التعليم32</a>
+                              </li>
+                             
+                            </ul>
+                          </li>
+                        </ul>
+                        <!--  -->
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">التعليم العام</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> الكليات والمعاهد</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">التسجيل والقبول</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">الابحاث</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">المركز الإعلامي</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Start Modal  -->
+  <div class="modal modalfade custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content customModal-content">
+        <div class="modal-body">
+          <div class="input-group  mb-3">
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+              aria-describedby="button-addon1">
+            <button class="btn subscribe-now" type="button" id="button-addon1">
+              <i class="fas fa-search btn-icon"></i>
+            </button>
+            <button type="button" class="btn subscribe-delet" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
+  <!-- ======= End Header ======= -->
+
+  <!-- ======= Start Banner Section ======= -->
+  <section class="banner" style="background-image: url(assets/img/Saudi-Arabia-banner.png)">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-around banner-content dir-col-mob">
+       
+          <div class="banner-desc">
+            <h3>كلية الجبيل الصناعية</h3>
+          </div>
+          <div class="banner-content">
+
+            <h2 class="banner-title">
+              عن الكلية
+            </h2>
+          </div>
+          <div class=""></div>
+        </div>
+  
+      <div class="row mt-5">
+        <div class="col-md-3 banner-content-col d-flex justify-content-end mb-3">
+        
+        </div>
+        <div class="col-md-8 d-flex justify-content-center">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======= Ene Banner Section ======= -->
+
+
+  <section class="wrapper-about-content">
+
+
+    <div class="container-fluid">
+      <div class="fixed-btn isShow" id="fixed-btn">
+        <button class="btn_toggle" id="btn_sidebar_toggle" onclick="openmenu()">
+
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.8125 4.375L7.1875 10L12.8125 15.625" stroke="white" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="row">
+  <!-- start sidebar -->
+        <div class="col-md-2 p-0 ">
+          <div class="sidebar-wrapper-custom ">
+
+            <div class="sidebar sidebar-wrapper " id="sidebar">
+              <button class="btn_toggle" id="btn_sidebar_toggle" onclick="openmenu()">
+
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8125 4.375L7.1875 10L12.8125 15.625" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+
+              <div class="menus sidebar-content">
+                <div class="w-100">
+                  <ul class="list-unstyled menu">
+                    <li class="list-item">
+                      <div class="collapse-item btn btn-toggle">
+                        <a href="#">الرئيسية</a>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="collapse-item btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" aria-expanded="false">
+                        <span>من نحن</span>
+                      </div>
+                      <div class="collapse" id="home-collapse">
+                        <ul class="btn-toggle-nav ">
+                          <li>
+                            <a href="#" class=" sidebar-link d-flex align-items-center gap-3">
+                              <img src="assets/img/menu_icons/home.svg" alt="">
+                              <span >عن الكلية</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class=" sidebar-link d-flex align-items-center gap-3">
+                              <img src="assets/img/menu_icons/paper.svg" alt="">
+                              <span >كلمة مدير الكلية</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class=" sidebar-link d-flex align-items-center gap-3">
+                              <img src="assets/img/menu_icons/vision.svg" alt="">
+                              <span >الرؤية والرسالة والأهداف</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class=" sidebar-link d-flex align-items-center gap-3">
+                              <img src="assets/img/menu_icons/goals.svg" alt="">
+                              <span >الأهداف الاستراتيجية</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class=" sidebar-link d-flex align-items-center gap-3">
+                              <img src="assets/img/menu_icons/documents.svg" alt="">
+                              <span >الاعتمادات</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class=" sidebar-link d-flex align-items-center gap-3">
+                              <img src="assets/img/menu_icons/scale.svg" alt="">
+                              <span >الوكالات</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class=" sidebar-link d-flex align-items-center gap-3">
+                              <img src="assets/img/menu_icons/chart.svg" alt="">
+                              <span >الهيكل الإدارى</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="collapse-item btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#academic-collapse" aria-expanded="false">
+                        <span>أكاديمى</span>
+                      </div>
+                      <div class="collapse" id="academic-collapse">
+                        <ul class="btn-toggle-nav ">
+                          <li>
+                            <a href="#" class="sidebar-link">
+                              <img src="assets/img/about-collage-vector.svg" alt="">
+                              <span>Overview</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="list-item">
+                      <div class="collapse-item btn btn-toggle collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#register-collapse" aria-expanded="false">
+                        <span>قبول وتسجيل</span>
+                      </div>
+                      <div class="collapse" id="register-collapse">
+                        <ul class="btn-toggle-nav ">
+                          <li>
+                            <a href="#" class="sidebar-link">
+                              <img src="assets/img/about-collage-vector.svg" alt="">
+                              <span>Overview123</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="collapse-item btn btn-toggle  collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#student-collapse" aria-expanded="false">
+                        <span>حياة الطالب</span>
+                      </div>
+                      <div class="collapse" id="student-collapse">
+                        <ul class="btn-toggle-nav ">
+                          <li>
+                            <a href="#" class="sidebar-link">
+                              <img src="assets/img/about-collage-vector.svg" alt="">
+                              <span>Overview</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+  <!-- end sidebar -->
+      <!-- ======= Start About Section ======= -->
+        <div class=" col-md-10">
+
+
+          <div class="row">
+            <div class="col-12 ">
+              <div class="breadcrumbs breadcrumbs-jubail">
+                <div class="breadcrumb-wrapper">
+                  <ul class="breadcrumb-list breadCrumb-border">
+                    <li class="breadcrumb-itm">
+                      <a class="breadcrumb-link" href="#">الرئيسية</a>
+                      <span>/</span>
+                    </li>
+                    <li class="breadcrumb-itm">
+                      <a class="breadcrumb-link" href="#">الكليات والمعاهد</a>
+                      <span>/</span>
+                    </li>
+                    <li class="breadcrumb-itm">
+                      <a class="breadcrumb-link" href="#">كلية الجبيل الصناعية</a>
+                      <span>/</span>
+                    </li>
+                    <li class="breadcrumb-itm">
+                      <h3>من نحن</h3>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 px-0">
+
+              <section class="about-jubail-collage">
+                <div class="sp-w">
+                  <h3 class="title">كلية الجبيل الصناعية</h3>
+                  <div class="row">
+                    <div class="col-12 col-lg-6 mb-3">
+                      <div class="desc-collage">
+                        <p>
+                          لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتمـــاد قد
+                          يستخدم لوريم إيبســوم كنص بديل قبل وضع النص النهائي المطلـــوب للتصميــــم كمــــا
+                          يستخـــدمتسمى بالتغريق، والتي تسمح للمصممين بالنظــر إلـــى شكــل صفحة ويب أو منشور، دون أن
+                          يؤثر معـنىيستخدم لإظهار نماذج أولية لبرامج أو تطبيقات أو مواقــع إنترنت وغيرها دون ترك أثر
+                          كبير لوريم إيبسوميستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخـــــط دون الاعتمـــــــاد
+                          علـــــى محتــــوى معنـــويكنص بديل قبل وضع النـص النهائي المطلوب للتصميم. كما يستخدم لإخفـاء
+                          النــص في عمليـــة تسمـــىللمصممين بالنظر إلــى شكـــل صفحة ويب أو منشــــور، دون أن يؤثـــــر
+                          معنـــى النـــص علـــى التصميـــــملوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل
+                          الوثيقة أو الخط دون الاعتمـــادقد يستخدم
+                        </p>
+                        <p>
+                          لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتمـــاد قد
+                          يستخدم لوريم إيبســوم كنص بديل قبل وضع النص النهائي المطلـــوب للتصميــــم كمــــا
+                          يستخـــدمتسمى بالتغريق، والتي تسمح للمصممين بالنظــر إلـــى شكــل صفحة ويب أو منشور، دون أن
+                          يؤثر معـنىيستخدم لإظهار نماذج أولية لبرامج أو تطبيقات أو مواقــع إنترنت وغيرها دون ترك أثر
+                          كبير لوريم إيبسوميستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخـــــط دون الاعتمـــــــاد
+                          علـــــى محتــــوى معنـــويكنص بديل قبل وضع النـص النهائي المطلوب للتصميم. كما يستخدم لإخفـاء
+                          النــص في عمليـــة تسمـــىللمصممين بالنظر إلــى شكـــل صفحة ويب أو منشــــور، دون أن يؤثـــــر
+                          معنـــى النـــص علـــى التصميـــــملوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل
+                          الوثيقة أو الخط دون الاعتمـــادقد يستخدم
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 dir-col-mob d-flex gap-4 mb-3 overf-h">
+                      <!-- <div class="img-box1"> -->
+                     
+                      <img src="assets/img/about-img-2.png" alt="" class="img-fluid second-img">
+                      <!-- </div> -->
+                    </div>
+
+                  </div>
+                </div>
+              </section>
+
+
+            </div>
+          </div>
+
+        </div>
+             <!-- ======= end About Section ======= -->
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+  <!-- ======= Start Footer Section ======= -->
+  <footer class="footer">
+    <div class="bg-footer">
+      <div class="footer-vector">
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="row">
+              <div class="footer-right-side col-12">
+                <div class="row">
+                  <div class="col-12 d-flex flex-column flex-lg-row">
+                    <div class="first-box">
+                        <a href="#">
+                          <img src="assets/img/logo-img.png" alt="">
+                        </a>
+                        <p>
+                          هنالك العديد من الأنواع المتوفرة لنصوص لوريـــم لوريــم 
+                          ولكـــن الغالبيـــة تـــم تعديلهـا بشكــل مـــا عبــر إدخــال 
+                        </p>
+                        
+                    </div>
+                    <div class="sec-box">
+                      <ul>
+                        <li class=" item-bold">
+                          <a href="#">خريطة الموقع:</a>
+                        </li>
+                        <li class=" item-bold">
+                          <a href="#">الأسئلة الشائعة:</a>
+                        </li>
+                        <li class=" item-bold">
+                          <a href="#">روابط مهمة:</a>
+                        </li>
+                        <!-- <li class=" item-bold">
+                          <a href="#">النشرة البريدية:</a>
+                        </li> -->
+                      </ul>
+                    </div>
+                    <div class="sec-box">
+                      <ul>
+                       
+                        <li class=" item-bold">
+                          <a href="#">البيانات المفتوحة:</a>
+                        </li>
+                        <li class=" item-bold">
+                          <a href="#">اتصل بنا:</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sec-box">
+                      <ul>
+                        <li class="item-bold">
+                          <a href="#">على الخريطة:</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            إدارات التعليم
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">الكليات</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">المعاهد</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">المدارس</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="sec-box">
+                      <ul>
+                        <li class="item-bold">
+                          <a href="#">سياسات الموقع:</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">سياسةالخصوصة</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">شروط الاستخدام</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">حقوق النشر</a>
+                        </li>
+                        <li class="item">
+                          <a href="#">التراخيص</a>
+                        </li>
+                      </ul>
+                    </div>
+  
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-none d-lg-block">
+              <div class="copy-write col-12">
+                <p>جميع الحقوق محفوظة - الهيئة الملكية بالجبيل وينبع 2024</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class=" "> -->
+            <div class="footer-left-side col-lg-2">
+              <div class="box-social">
+                <div class="special-person">
+                  <div class="img-box">
+                    <img src="assets/img/special-vector.png" alt="">
+                  </div>
+                  <div class="text">
+                    <p>
+                      خدمــة <span class="aamer">آمــــــــر</span> لمساعدة
+                      ذوي الاحتياجات الخاصة
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div class="social-icons">
+                    <h4 class="socila-media">التواصل الاجتماعي:</h4>
+                    <p class="socila-media-jubail">
+                      بالجبيل
+                    </p>
+                      <ul class="icons">
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/in.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/youtube.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/insta.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/twitter.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/facebook.png" alt="" srcset="">
+                          </a>
+                        </li>
+                      
+                      </ul>
+                  </div>
+                  <div class="social-icons">
+                    <p class="socila-media-janboo">
+                        بينبع
+                    </p>
+                      <ul class="icons">
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/in.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/youtube.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/insta.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/twitter.png" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="item">
+                          <a href="#">
+                            <img src="assets/img/facebook.png" alt="" srcset="">
+                          </a>
+                        </li>
+                      
+                      </ul>
+                  </div>
+                  <div class="bottom-sec">
+                    <a href="#">
+                      <img src="assets/img/google-play.png" alt="">
+                    </a>
+                    <a href="#">
+                      <img src="assets/img/surface1.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-lg-none d-block">
+              <div class="copy-write col-12">
+                <p>جميع الحقوق محفوظة - الهيئة الملكية بالجبيل وينبع 2024</p>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ======= End Footer Section ======= -->
+
+
+  <!-- ======= Scroll-to-top Section ======= -->
+  <!-- ======= Scroll-to-top Section ======= -->
+
+
+  <!--JS Files -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/mdb.umd.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <!-- jfontsize -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    AOS.init({
+      once: true,
+      // mirror: false,
+      // anchorPlacement: 'top-bottom',
+    })
+  </script>
+
+</body>
+
+</html>

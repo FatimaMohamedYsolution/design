@@ -17,7 +17,7 @@
       border-bottom: 1px dashed #333;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 0px;
-      padding: 20px;
+      padding: 50px 20px 0px;
       // height: 260px;
       .first-box{
         width: 400px;
@@ -30,7 +30,8 @@
           font-size: 18px;
           font-weight: 400;
           color: var(--navbar-color);
-          margin: 16px 0px;
+          // margin: 16px 0px;
+          padding: 20px 0px 30px;
         }
       }
       // 
@@ -46,6 +47,7 @@
             color: var(--dark-color);
             display: block;
             margin-bottom: 25px;
+            text-transform: capitalize;
             &::before{
               position: absolute;
               content: '';
@@ -78,7 +80,7 @@
         .special-person{
           display: flex;
           align-items: center;
-          margin: 80px 5px 0;
+          margin: 50px 5px 0;
           .img-box{
             // width: 75px;
             // height: 75px;
@@ -96,9 +98,12 @@
           }
           .text{
             border: 1px solid var(--third-color);
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
             padding-block: 6px;
+            border-left: 0;
             p{
               font-size: 12px;
               color: #fff;
@@ -111,40 +116,47 @@
           }
         }
         .social-icons{
-          margin: 20px 5px 10px;
-          a{
+          margin: 0px 5px 10px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          .socila-media{
             position: relative;
-            &.socila-media{
-              font-size: 15px;
-              font-weight: 700;
-              color: var(--white-color);
-              margin: 50px 0 20px;
-              display: block;
-              width: 62px;
-              &::before{
-                position: absolute;
-                content: '';
-                width: 50px;
-                height: 2px;
-                background-color: var(--white-color);
-                bottom: -5px;
-              }
-            }
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--white-color);
+            margin: 15px 0 10px;
+            border-bottom: 1px solid var(--white-color);
+            width: -moz-fit-content;
+            width: fit-content;
+            letter-spacing: 1px;
+            
+            
+          }
+          .socila-media-jubail,.socila-media-janboo{
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--white-color);
+            margin:  5px 0 5px;
           }
         }
         .icons{
           display: flex;
           align-items: baseline;
           justify-content: space-around;
+         .item{
+           margin-inline: 3px;
           img{
             width: 23px;
             height: 23px;
           }
+         }
         }
         .bottom-sec{
           display: flex;
           justify-content:  space-evenly;
-          padding: 10px 0px 0px;
+          padding: 10px 0px 30px;
 
           img{
             &:last-child{
@@ -158,12 +170,15 @@
 
       
   .copy-write{
+    // margin-top: 35px;
+    padding: 10px 0px;
+    margin-top: 25px;
     p{
       font-size: 16px;
       color: var(--dark-color);
       font-weight: 400;
       text-align: center;
-      padding: 20px 0px;
+      // padding: 20px 0px 0px;
     }
   }
 
@@ -173,40 +188,5 @@
 /*--------------------------------------------------------------
   # End Footer Section
 --------------------------------------------------------------*/
-  .input-group{
-    margin: 10px 0px;
-    input{
-      &.form-control{
-        height: 45px;
-        border-radius: 30px;
-        border-top-left-radius: 30px !important;
-        border-bottom-left-radius: 30px !important;            
-        border-top-right-radius: 30px !important;
-        border-bottom-right-radius: 30px !important;
-        border: transparent;
-      }
-    }
-    button{
-      &.subscribe-now{
-        background-color: var(--primary-color);
-          border: none;
-            color: #fff;
-            padding: 0;
-            height: 45px;
-            text-align: center;
-            border-top-left-radius: 30px !important;
-            border-bottom-left-radius: 30px !important;
-            padding-inline: 25px;
-            border-radius: 30px;
-            // margin-inline-start: -50px;
-            position: absolute;
-            z-index: 9999;
-            right: 0;
-            left: unset;
-        }
-    }
-
-  }
-
 
 

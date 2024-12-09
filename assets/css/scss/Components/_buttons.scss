@@ -12,13 +12,13 @@ a{
         align-items: center;
         width: fit-content;
         border-radius: 8px;
+        text-transform: capitalize;
         svg{
             &.fa-arrow-right{
                 font-size: var(--mainText-fontSize);
                 color: var(--white-color);  
                 margin-inline-start: 5px;
                 margin-inline-end: 5px;
-                // transform: rotate(180deg);
             }
         }
     }
@@ -36,6 +36,7 @@ a{
         align-items: center;
         width: fit-content;
         border-radius: 8px;
+        text-transform: capitalize;
         svg{
             &.fa-arrow-right{
                 font-size: var(--mainText-fontSize);
@@ -47,9 +48,44 @@ a{
     }
 }
 
+a{
+    &.more{
+        font-size: var(--btns-fontSize);
+        color: var(--dark-color);
+        font-weight: 700;
+        padding: 10px 15px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        border-radius: 8px;
+        text-transform: capitalize; 
+       text-decoration: underline;
+    }
+}
 
-
-
+button{
+    &.resetButton{
+        background-color: var(--primary-color);
+        font-size: var(--btns-fontSize);
+        color: var(--white-color);
+        font-weight: 700;
+        padding: 10px 15px;
+        margin: 15px auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        border-radius: 8px;
+        text-transform: capitalize;
+        border: none;
+        svg{
+            &.fa-sync-altt{
+                margin-inline-end: 10px;
+            }
+        }
+    }
+}
 
 
 
